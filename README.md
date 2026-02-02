@@ -1,6 +1,6 @@
 # 🌌 Welcome to My Universe
 
-![[SYSTEM/_media/images/screenshots/homepage.gif]]
+![homepage gif](SYSTEM/_media/images/screenshots/homepage.gif)
 
 This vault is my sky — a living map of thoughts, memories, stories, and sparks of curiosity drifting through the dark. Every note is a star, every tag a constellation, every project a galaxy still expanding. Some ideas burn bright at the center of everything, others float softly at the edge, waiting to be discovered.
 
@@ -14,14 +14,14 @@ Read on to learn how to explore my personal cosmos.
 
 ---
 > ## ⋆｡°✩ Table of Contents ✩°｡⋆
-> [About This Vault](#about-this-vault)
-> 1. [The Hitchhiker's Guide to My Universe](#the-hitchhikers-guide-to-my-universe)
->	1. [Universal Glossary](#universal-glossary)
->	2. [Coloring the Cosmos](#coloring-the-cosmos-lmao)
+> 1. [About This Vault](#about-this-vault)
+> 2. [The Hitchhiker's Guide to My Universe](#the-hitchhikers-guide-to-my-universe)
+>	3. [Universal Glossary](#universal-glossary)
+>	4. [Coloring the Cosmos](#coloring-the-cosmos-lmao)
 >		1. [Universal Color Philosophy](#universal-color-philosophy)
 >		2. [Constellations](#constellations)
 >		3. [Star Charts](#star-charts)
->	3. [Navigating the Nebulae](#navigating-the-nebulae)
+>	5. [Navigating the Nebulae](#navigating-the-nebulae)
 >		1. [The Celestial Architecture](#the-celestial-architecture)
 >		2. [The Digital Hobonichi Galaxy](#the-digital-hobonichi-galaxy)
 >		3. [The INBOX Nebula](#the-inbox-nebula)
@@ -29,7 +29,7 @@ Read on to learn how to explore my personal cosmos.
 >		5. [The Coloring the Cosmos Galaxy](#the-coloring-the-cosmos-galaxy)
 >		6. [The OBSERVATORIES Nebula](#the-observatories-nebula)
 >		7. [The SYSTEM Nebula](#the-system-nebula)
->	4. [Plugins Used](#plugins-used)
+>	6. [Plugins Used](#plugins-used)
 >		1. [Core Plugins](#core-plugins)
 >		2. [Visualization & Interface Plugins](#visualization--interface-plugins)
 >		3. [Data & Query Plugins](#data--query-plugins)
@@ -40,18 +40,18 @@ Read on to learn how to explore my personal cosmos.
 >		8. [Utility Plugins](#utility-plugins)
 >		9. [Development & Writing Plugins](#development--writing-plugins)
 >		10. [Setup Instructions](#setup-instructions)
-> 2. [A Gentle Warning from the Stars](#a-gentle-warning-from-the-stars)
-> 3. [Gratitude Across the Cosmos](#gratitude-across-the-cosmos)
-> 4. [Open Transmissions Welcome](#open-transmissions-welcome)
+> 7. [A Gentle Warning from the Stars](#a-gentle-warning-from-the-stars)
+> 8. [Gratitude Across the Cosmos](#gratitude-across-the-cosmos)
+> 9. [Open Transmissions Welcome](#open-transmissions-welcome)
 
 ---
 ## ⋆｡°✩ Visuals ✩°｡⋆
-![[SYSTEM/_media/images/screenshots/new-tab-setup.png]]
-![[SYSTEM/_media/images/screenshots/redacted-weekly-overview.png]]
-![[SYSTEM/_media/images/screenshots/monthly-overview.png]]
-![[SYSTEM/_media/images/screenshots/daily-star.png]]
-![[SYSTEM/_media/images/screenshots/frequency-scanner.png]]
-![[SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png]]
+![new tab setup](SYSTEM/_media/images/screenshots/new-tab-setup.png)
+![daily star example](SYSTEM/_media/images/screenshots/daily-star.png)
+![redacted weekly overview](SYSTEM/_media/images/screenshots/redacted-weekly-overview.png)
+![monthly overview](SYSTEM/_media/images/screenshots/monthly-overview.png)
+![frequency scanner](SYSTEM/_media/images/screenshots/frequency-scanner.png)
+![monthly overview](SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png)
 
 ## ⋆｡°✩ About This Vault ✩°｡⋆
 I created a showcase of my universe over on the Obsidian Members Group Discord, which is located [here](https://discord.com/channels/686053708261228577/1443067199202787481). I also created a [Reddit post](https://www.reddit.com/r/ObsidianMD/comments/1p6x88o/sharing_the_heart_of_my_universe_bonus_beautitab/) showcasing my home page and new tab styling. Both go further into depth about why I created my main universe in the first place. After multiple requests, I've created this public version of my universe for others to peruse. I will try my best to keep it up-to-date with my main universe, as it is still under construction and is constantly evolving! Please check the bottom of this file to see when I last updated this vault.
@@ -402,4 +402,4 @@ I prefer questions and discussions in the [dedicated thread for my universe](htt
 
 I build and maintain this universe in my free time, pouring countless hours into crafting something beautiful and functional to share with the community. If this vault has inspired you or helped organize your own cosmos, consider [buying me a coffee](https://buymeacoffee.com/hppandeli) to fuel future star-building sessions!
 
-_Last Updated: February 1st, 2026_
+_Last Updated: February 2nd, 2026_
