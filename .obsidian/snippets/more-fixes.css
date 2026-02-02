@@ -1,0 +1,288 @@
+body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task="!"] > span > *, body:not(.check-color, .check-text) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task="!"] span:not([class^=cm-list]){
+    opacity: 1 !important;
+}
+
+body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task="D"] > span > *, body:not(.check-color, .check-text) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task][data-task="D"] span:not([class^=cm-list]){
+    opacity: 1 !important;
+}
+
+.markdown-preview-view li, .markdown-source-view li {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.25em !important;
+  }
+
+/*  .markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.25em !important;
+  }*/
+
+/*for legacy editor*/
+.CodeMirror-activeline.CodeMirror-linebackground{
+    background-color: hsla(var(--accent-h, 254), var(--accent-s, 80%), var(--accent-l, 68%), 0.2);
+}
+  
+  /*for live preview mode*/
+  .cm-active.cm-line{
+    background-color: hsla(var(--accent-h, 254), var(--accent-s, 80%), var(--accent-l, 68%), 0.2);
+}
+  
+  /* for live preview mode code block */
+  div.cm-active.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line {
+    background-color: hsla(var(--accent-h, 254), var(--accent-s, 80%), var(--accent-l, 68%), 0.2);
+}
+
+/* set this to whatever your workspace gap is (10px in your case) */
+:root { --ws-gap: 10px; }
+
+/* cancel the gap right next to the ribbons */
+.workspace > .workspace-ribbon.mod-left  { margin-inline-end:  calc(var(--ws-gap) * -1) !important; }
+.workspace > .workspace-ribbon.mod-right { margin-inline-start: calc(var(--ws-gap) * -1) !important; }
+
+
+/* code to make metabind toggles show as columns on daily notes */
+
+/* Create a flex container that wraps consecutive el-pre elements */
+/*.daily-note .el-pre + .el-pre {
+  margin-left: 0;
+}*/
+
+/* Center consecutive el-pre elements */
+/*.daily-note .markdown-preview-sizer {
+  text-align: center;
+}*/
+
+/* Reset text alignment for other elements */
+/*.daily-note .markdown-preview-sizer > *:not(.el-pre) {
+  text-align: left;
+}
+
+.daily-note .el-pre.el-lang-dataview {
+  display:flex;
+}*/
+
+/* Keep the el-pre containers inline and centered */
+/*.daily-note .el-pre {
+  display: inline-block !important;
+  vertical-align: top;
+  margin-right: 1rem;
+}*/
+
+/*.daily-note .block-language-meta-bind.interactive-child.mb-input.mb-input-block {
+  display: inline-block;
+}*/
+
+/* make sure tabs plugin is left-aligned */
+/* Left-align .el-pre that wraps .tabs-container */
+/*.el-pre:has(> .tabs-container) {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}*/
+
+/* Optional: make sure inner .tabs-container doesn’t re-center itself */
+/*.el-pre > .tabs-container {
+  margin-left: 0 !important;
+  justify-content: flex-start !important;
+}*/
+
+/* makes the daily habits be set as columns, but leaves my hobby log as rows --- probably should switch from flex to grid sometime */
+.daily-note div[data-callout="multi-column"].callout .callout-content .callout[data-callout="habit"] .callout-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* HOME PAGE STYLING */
+
+/* center / right align images */
+img[alt*="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[alt*="right"] {
+  float:right;
+  clear:right;
+  margin-left: 1rem;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+/* home stats boxes */
+.home-stats-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch !important;
+  align-self: stretch !important;
+  text-align: center;
+  border-radius: 15px !important;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  color: white;
+  background-color: rgba(2, 2, 2, 0.2);
+  box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+}
+
+/*.home-stats-widget:hover{
+  transform: scale(1.1);
+  filter:
+    drop-shadow(0 0 4px #8A6CF5)
+    drop-shadow(0 0 6px #BA9FFF);
+}*/
+
+/*.home-stats-widget {
+  border-radius: 6px !important;
+  padding: 20px;
+  text-align: center;
+  font-family: var(--font-text);
+  color: var(--text-normal);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch !important;
+
+}
+
+.home-stats-widget.grow{
+  background-color: rgba(var(--color-purple-rgb), 0.3);
+  border: solid 3px var(--color-purple);
+  color: #ffffff;
+}
+
+.home-stats-widget.stars{
+  background-color: rgba(var(--color-purple-rgb), 0.3);
+  border: solid 3px var(--color-purple);
+  color: #ffffff;
+  align-self: stretch !important;
+}
+
+.home-stats-widget.constellations{
+  background-color: rgba(var(--color-purple-rgb), 0.3);
+  border: solid 3px var(--color-purple);
+  color: #ffffff;
+  align-self: stretch !important;
+}*/
+
+.hide-doodle-underline{
+  display:flex;
+  flex-direction: column;
+}
+
+.hide-doodle-underline h3{
+  color: var(--link-color);
+}
+
+.hide-doodle-underline h3:hover{
+  color: var(--link-color-hover);
+}
+
+.theme-dark .graph-view.color-fill-tag {
+  color: #8f8f8f; /* Red */
+}
+
+
+.markdown-source-view .image-embed:not(:is([alt~=full-width-image], [alt~=full-w-img], [alt~=fwi], [alt~="full-width-panoramic-image-:jack_o_lantern:"], [alt~=fwpi-jol], [alt~=no-shadow], [alt~=banner], [alt~="banner+small"], [alt~="banner+tall"], [alt~=sban]))::before, .markdown-source-view.mod-cm6 .cm-line .image-embed:not(:is([alt~=full-width-image], [alt~=full-w-img], [alt~=fwi], [alt~="full-width-panoramic-image-:jack_o_lantern:"], [alt~=fwpi-jol], [alt~=no-shadow], [alt~=banner], [alt~="banner+small"], [alt~="banner+tall"], [alt~=sban]))::before, .markdown-rendered .image-embed:not(:is([alt~=full-width-image], [alt~=full-w-img], [alt~=fwi], [alt~="full-width-panoramic-image-:jack_o_lantern:"], [alt~=fwpi-jol], [alt~=no-shadow], [alt~=banner], [alt~="banner+small"], [alt~="banner+tall"], [alt~=sban]))::before{
+  background:none;
+}
+
+/* fix tag pills */
+.cm-hashtag{
+  line-height: 2em;
+}
+
+a.tag{
+  line-height: 2em;
+}
+
+/* author callout */
+.callout[data-callout="author"] {
+  display: flex;
+  flex-direction: column-reverse;
+  --callout-icon: user;
+  --callout-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-left: solid;
+}
+
+.callout[data-callout="author"] > .callout-title {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-style: italic;
+}
+
+.callout[data-callout="author"] .callout-content p {
+  margin-top: 0;
+}
+
+/*
+author: ApolloGoneRogue
+source: https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474/244?u
+*/
+
+/* This snippet provides a style to blockquotes and to the <cite> element. */
+
+/* for preview */
+.markdown-preview-view blockquote {
+  border-color: var(--color-accent);
+  border-left-width: 2px !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(var(--color-purple-rgb), 0.1),
+    rgba(var(--color-purple-rgb), 0)
+  );
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  width: 90%;
+}
+
+.markdown-preview-view blockquote {
+  position: relative;
+}
+
+.markdown-preview-view blockquote:after {
+  content: "\275D";
+  position: absolute;
+  top: 0.4em;
+  left: -1em;
+  font-size: 2.5em;
+  color: var(--color-accent);
+}
+
+cite {
+  color: var(--color-accent);
+  text-align: end;
+  display: block;
+}
+
+.cm-html-embed thead tr:hover, .markdown-rendered thead tr:hover {
+  background-color: var(--table-header-background);
+}
+
+
+@media screen and (max-width: 1400px) {
+  /* CSS rules for mobile go here */
+  .para-margins{
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1800px) {
+  /* CSS rules for tablets go here */
+  .para-margins {
+    margin: 0px 150px;
+  }
+}

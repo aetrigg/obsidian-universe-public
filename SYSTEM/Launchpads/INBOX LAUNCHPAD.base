@@ -1,0 +1,8 @@
+filters:
+  and:
+    - file.folder == "INBOX"
+    - file.name != "INBOX MOC"
+views:
+  - type: cards
+    name: INBOX LAUNCHPAD
+    image: note.image

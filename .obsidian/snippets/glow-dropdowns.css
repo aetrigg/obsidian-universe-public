@@ -1,0 +1,326 @@
+/* Glyph Observatory Dropdowns */
+
+.glyph-dropdown {
+    position: relative;
+  }
+
+  .glyph-dropdown-header {
+    background: rgba(20,20,20,0.2) !important;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    border: 2px solid #8A6CF5 !important;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+    /*background: transparent !important;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    border: 2px solid #ffffff !important;
+    border-radius: 30px;
+    font-size:15px;
+    font-weight:500;*/
+  }
+
+  .glyph-dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    /* your existing options container styles (background, border-radius, etc.) */
+  }
+
+  .glyph-dropdown:hover .glyph-dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .glyph-dropdown-option {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .glyph-dropdown-options {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 5px;    
+    /*background: rgba(20,20,20,0.3) !important;
+    backdrop-filter: blur(5px) !important;*/
+    background: rgba(20,20,20,0.9) !important;
+    
+    /*border: 2px solid #8A6CF5 !important;*/
+    border-radius: 15px;
+    /*box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;*/
+    z-index: 10000;
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .glyph-dropdown-panel {
+    background: rgba(20,20,20,0.2) !important;
+    border-radius: 20px;
+    margin-top:0px !important;
+  }
+
+  .glyph-dropdown-option:hover {
+    background: rgba(124, 77, 255, 0.25);
+    text-shadow:
+    0 0 8px #8A6CF5,
+    0 0 14px #BA9FFF,
+    0 0 24px #C3B1FF;
+  }
+
+  /*.glyph-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .glyph-dropdown-header{
+    background: transparent !important;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: 2px solid #8A6CF5 !important;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 200px;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+  }
+
+  .glyph-dropdown-options {
+    display:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 5px;    
+    background: rgba(2,2,2,0.7) !important;
+    border: 2px solid #8A6CF5 !important;
+    border-radius: 15px;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+    z-index: 10000;
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .glyph-dropdown-option {
+    display: block;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .glyph-dropdown:hover .glyph-dropdown-options {
+    display: inline-block;
+  }
+
+  .glyph-dropdown-option:hover {
+    background: rgba(124, 77, 255, 0.15);
+  }
+
+  .glyph-dropdown-panel {
+    background: rgba(2,2,2,0.2) !important;
+    border-radius: 50px;
+    border: 2px solid #8A6CF5 !important;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+    margin-top:0px !important;
+  }*/
+
+  /*
+  .glyph-dropdown-header {
+    background: transparent;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: 2px solid #8A6CF5;
+    border-radius: 30px;
+    font-weight: 500;
+    text-shadow: 0 0 8px #8A6CF5;
+    box-shadow: 0 0 15px rgba(124, 77, 255, 0.5);
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 120px;
+    box-sizing: border-box;
+  }
+
+  .glyph-dropdown-options {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 5px;
+    background: rgba(2,2,2,0.5) !important;
+    border: 2px solid #8A6CF5;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(124, 77, 255, 0.5);
+    z-index: 10000;
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .glyph-dropdown-option {
+    display: block;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 0 0 8px #8A6CF5;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .glyph-dropdown-option:hover {
+    background: rgba(124, 77, 255, 0.15);
+  }
+
+  .glyph-dropdown:hover .glyph-dropdown-options {
+    display: block;
+  }
+*/
+
+
+/* Monthly Overview Quicklinks Dropdowns */
+.quick-links-dropdown {
+    position: relative;
+    z-index: 50 !important;
+    width: 200px;
+    background: rgba(20,20,20,0.3) !important;
+    border: 2px solid #fff;
+    backdrop-filter: blur(2.5px) !important;
+    border-radius: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+  }
+
+  .quick-links-dropdown.glow-purple {
+    border: 2px solid #8A6CF5 !important;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+    background-color: rgba(20,20,20,0.3) !important;
+  }
+
+  .quick-links-dropdown-header {
+    background: transparent !important;
+    color: #FFFFFF;
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size:15px;
+    font-weight:500;
+    cursor: pointer;
+    display:flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .quick-links-dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  }
+
+  .quick-links-dropdown:hover .quick-links-dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .quick-links-dropdown-option {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .quick-links-dropdown-options {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 1px;    
+    background: rgba(20,20,20,0.9) !important;
+    /*background: rgba(20, 20, 20, 0.1);
+    backdrop-filter: blur(2.5px) !important;*/
+    border-radius: 15px;
+    z-index: 10000;
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .quick-links-dropdown-panel {
+    background: rgba(20,20,20,0.2) !important;
+    border-radius: 20px;
+    margin-top:0px !important;
+  }
+
+  .quick-links-dropdown-option:hover {
+    background: rgba(124, 77, 255, 0.25);
+    text-shadow:
+    0 0 8px #8A6CF5,
+    0 0 14px #BA9FFF,
+    0 0 24px #C3B1FF;
+  }
+
+/* glow text */
+.glow-text{
+    text-shadow:
+    0 0 8px #8A6CF5,
+    0 0 14px #BA9FFF,
+    0 0 24px #C3B1FF;
+}

@@ -1,0 +1,13 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "showInlineTitle": true,
+  "userIgnoreFilters": [
+    "5TH OF JUNE/Note Imports/Chat Logs - Nexus Imports/Reports/"
+  ],
+  "showUnsupportedFiles": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "useTab": true
+}

@@ -1,0 +1,152 @@
+{
+  "callouts": {
+    "custom": [
+      "habit",
+      "created",
+      "modified",
+      "hobbies",
+      "fifth-of-june",
+      "coloringthecosmos",
+      "personal",
+      "vault",
+      "info",
+      "quote2"
+    ],
+    "settings": {
+      "habit": [
+        {
+          "changes": {
+            "icon": "lucide-list-todo"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "112, 16, 147"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "193, 117, 234"
+          }
+        }
+      ],
+      "created": [
+        {
+          "changes": {
+            "icon": "lucide-file-plus"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "4, 128, 169"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "193, 117, 234"
+          }
+        }
+      ],
+      "modified": [
+        {
+          "changes": {
+            "icon": "lucide-file-clock"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "4, 128, 169"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "42, 186, 234"
+          }
+        }
+      ],
+      "hobbies": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "4, 128, 169"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "42, 186, 234"
+          }
+        }
+      ],
+      "fifth-of-june": [
+        {
+          "changes": {
+            "icon": "lucide-stars",
+            "color": "220, 45, 68"
+          }
+        }
+      ],
+      "coloringthecosmos": [
+        {
+          "changes": {
+            "icon": "lucide-stars",
+            "color": "236, 99, 181"
+          }
+        }
+      ],
+      "personal": [
+        {
+          "changes": {
+            "icon": "lucide-stars",
+            "color": "180, 79, 255"
+          }
+        }
+      ],
+      "vault": [
+        {
+          "changes": {
+            "icon": "lucide-stars",
+            "color": "255, 218, 43"
+          }
+        }
+      ],
+      "quote2": [
+        {
+          "changes": {
+            "icon": "lucide-quote"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": false,
+    "theme": false,
+    "snippet": true
+  }
+}

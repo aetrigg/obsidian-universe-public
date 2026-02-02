@@ -1,0 +1,53 @@
+---
+cssclasses:
+  - hide-properties_editing
+  - hide-properties_reading
+  - my-class
+obsidianUIMode: preview
+---
+
+- [x] `- [ ]` Not started
+- [/] `- [/]` In progress
+- [x] `- [x]` Complete
+- [-] `- [-]` Cancelled
+- [g] `- [g]` Birthday 
+- [<] `- [<]` Event / Appointment
+- [>] `- [>]` Rescheduled 
+- [!] `- [!]` Urgent
+- [?] `- [?]` Question
+- [E] `- [E]` Explore / Discovery
+- [b] `- [b]` Bookmark
+- [i] `- [i]` Idea
+- [p] `- [p]` Pro
+- [c] `- [c]` Con
+- [h] `- [h]` Heart / Love
+- [*] `- [*]` Star / Win
+- [+] `- [+]` Medical
+- [$] `- [$]` Expenses / Income
+- [l] `- [l]` Location
+- [f] `- [f]` Food
+- [@] `- [@]` Mail
+- [#] `- [#]` Call
+- [m] `- [m]` Message
+- [F] `- [F]` Funny 
+- [T] `- [T]` TV
+- [M] `- [M]` Music
+- [W] `- [W]` Writing
+- [R] `- [R]` Reading
+- [P] `- [P]` Planning 
+- [j] `- [j]` Journaling 
+- [G] `- [G]` Gaming
+- [B] `- [B]` Browsing
+- [o] `- [o]` Obsidian
+- [t] `- [t]` Theo
+- [C] `- [C]` Coloring
+- [S] `- [S]` Scripting / Coding
+- [w] `- [w]` Weed
+- [D] `- [D]` Dream 
+- [H] `- [H]` Home
+- [z] `- [z]` Migraine / Pain
+- [Z] `- [Z]` Sleep / Rest
+- [d] `- [d]` Driving 
+- [J] `- [J]` Gospel / God
+- [y] `- [y]` Fitness / Exercise
+-  `-` Note

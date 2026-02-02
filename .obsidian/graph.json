@@ -1,0 +1,177 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"BLACK HOLE\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5197647
+      }
+    },
+    {
+      "query": "path:\"5TH OF JUNE/Note Imports/Chat Logs - Nexus Imports\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16350075
+      }
+    },
+    {
+      "query": "path:\"5TH OF JUNE/Note Imports/NovelCrafter Information\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16350075
+      }
+    },
+    {
+      "query": "path:\"5TH OF JUNE/Note Imports/Google Docs Notes\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16350075
+      }
+    },
+    {
+      "query": "path:\"5TH OF JUNE/Note Imports/Legacy - OneNote Archive\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16350075
+      }
+    },
+    {
+      "query": "path:\"5TH OF JUNE/Drafts & Revisions\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701652
+      }
+    },
+    {
+      "query": "path:\"5TH OF JUNE/5OJ Series Bible\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16068142
+      }
+    },
+    {
+      "query": "path:BOOKMARKS  ",
+      "color": {
+        "a": 1,
+        "rgb": 16030260
+      }
+    },
+    {
+      "query": "path:BOOKMARKS/Reddit  ",
+      "color": {
+        "a": 1,
+        "rgb": 14186766
+      }
+    },
+    {
+      "query": "path:COLORINGTHECOSMOS  ",
+      "color": {
+        "a": 1,
+        "rgb": 16117294
+      }
+    },
+    {
+      "query": "path:\"SYSTEM/_data/Books/Coloring Books\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16117294
+      }
+    },
+    {
+      "query": "path:SYSTEM/_data/Bills  ",
+      "color": {
+        "a": 1,
+        "rgb": 5111552
+      }
+    },
+    {
+      "query": "path:OBSERVATORIES/Finances  ",
+      "color": {
+        "a": 1,
+        "rgb": 5111616
+      }
+    },
+    {
+      "query": "path:INBOX  ",
+      "color": {
+        "a": 1,
+        "rgb": 57343
+      }
+    },
+    {
+      "query": "path:OBSERVATORIES  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "path:MUSINGS  ",
+      "color": {
+        "a": 1,
+        "rgb": 1202429
+      }
+    },
+    {
+      "query": "path:SYSTEM  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "path:\"Digital Hobonichi\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 13870839
+      }
+    },
+    {
+      "query": "path:DASHBOARDS  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "file:\"MISSION CONTROL\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "file:\"NORTH STAR\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "path:SOURCES  ",
+      "color": {
+        "a": 1,
+        "rgb": 9391058
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.07360926270961,
+  "lineSizeMultiplier": 0.556263863011268,
+  "collapse-forces": true,
+  "centerStrength": 0.521249223671369,
+  "repelStrength": 9.66551326412918,
+  "linkStrength": 1,
+  "linkDistance": 256,
+  "scale": 0.6295473809232931,
+  "close": false
+}

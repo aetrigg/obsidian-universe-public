@@ -1,0 +1,22 @@
+{
+  "clientId": "",
+  "clientSecret": "",
+  "accessToken": "",
+  "refreshToken": "",
+  "expires": "2026-01-27T20:51:50-05:00",
+  "thumbnailWidth": 800,
+  "thumbnailHeight": 500,
+  "filename": "YYYY-MM-DD[_google-photo_]HHmmss[.jpg]",
+  "thumbnailMarkdown": "![[{{local_thumbnail_link}}]]",
+  "locationOption": "specified",
+  "locationFolder": "SYSTEM/_media/images/Digital Hobonichi/scrapbook",
+  "locationSubfolder": "photos",
+  "convertPastedLink": true,
+  "defaultToDailyPhotos": true,
+  "getDateFrom": "Note's title",
+  "getDateFromFrontMatterKey": "date",
+  "getDateFromFormat": "YYYY-MM-DD",
+  "showPhotosInDateRange": false,
+  "showPhotosXDaysPast": 7,
+  "showPhotosXDaysFuture": 1
+}

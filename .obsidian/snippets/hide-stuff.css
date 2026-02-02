@@ -1,0 +1,45 @@
+.my-class  .inline-title{
+    display:none;
+}
+
+ .hide-properties_reading {
+    --metadata-display-reading: none; 
+}
+
+.hide-properties_editing {
+    --metadata-display-editing: none;
+}
+
+.iconize-icon-in-link{
+    display:none;
+}
+
+/* Hide done tasks. Marked as "X" */
+/* Edit mode*/
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] {
+  /*display: none;*/
+  opacity: .5;
+}
+
+/* Reading mode */
+ul > li.task-list-item[data-task="x"],
+ul > li.task-list-item[data-task="X"],
+ul > li.task-list-item[data-task="-"] {
+  /*display: none;*/
+  opacity: .5;
+}
+
+/*Changes how custom emojis display on pages. */
+
+/* Make text beside the emoji snap to the bottom instead of the top. */
+.isc-icon:not(.isc-char-icon) {
+  vertical-align: text-bottom;
+  }
+  
+  /* Enlarges the icon by 2.5x */
+  .markdown-source-view .isc-icon>img, .markdown-source-view .isc-icon>svg, .markdown-preview-view .isc-icon>img, .markdown-preview-view .isc-icon>svg {
+  height: calc(var(--font-text-size, var(--editor-font-size, 1em)) * 1.5);
+  width: calc(var(--font-text-size, var(--editor-font-size, 1em)) * 1.5);
+  }

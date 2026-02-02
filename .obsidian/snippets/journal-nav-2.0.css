@@ -1,0 +1,469 @@
+/* Better tag layout inside tables */
+/*.markdown-preview-view table td .tag, .markdown-source-view table td .tag {
+    display: inline-block;       
+    margin: 2px 4px 2px 0;       
+    vertical-align: middle;     
+    white-space: nowrap;         
+}
+
+.markdown-preview-view table td, .markdown-source-view table td {
+    padding: 8px;
+    margin: 2px 4px 2px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}/*
+
+/* Base style for all nav links */
+span.nav-header .internal-link {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0 4px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #8A5CF5;
+    color: #8A5CF5;
+}
+
+/* Unresolved notes */
+span.nav-header .internal-link.is-unresolved {
+    opacity: 0.5;
+    color: #8A5CF5;
+}
+
+span.nav-header .internal-link.is-unresolved:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* Resolved notes */
+span.nav-header .internal-link:hover,
+span.nav-header-white .internal-link:hover {
+    background-color: #8A5CF5;
+    color: #ffffff;
+}
+
+/* Remove the doodle underline */
+span.nav-header .internal-link::after,
+span.nav-header-white .internal-link::after {
+    content: "";
+    display: none;
+}
+
+/* Remove the dotted line under nav header */
+/* Center and clean up the nav header */
+.nav-header,
+span.nav-header {
+    text-align: center;
+    display: block;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* for when i want the color to be white bc the gif is dark */
+span.nav-header-white .internal-link{
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 20px 4px 5px 4px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration:none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+span.nav-header-white .internal-link:hover{
+    border-color: #8A5CF5;
+}
+
+/* ------- MONTHLY NAV FIXES ------- */
+
+/* remove callout chrome + center + tighten spacing */
+.markdown-preview-view .callout[data-callout="navblock"],
+.markdown-source-view .callout[data-callout="navblock"] {
+    --callout-color: #ffffff;
+    --callout-icon: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0.6em 0 0.2em 0;
+}
+
+.markdown-preview-view .callout[data-callout="navblock"] .callout-title,
+.markdown-source-view .callout[data-callout="navblock"] .callout-title { 
+    display: none; 
+}
+
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content {
+    text-align: center;
+    line-height: 1.25;
+}
+
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content p,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content p {
+    margin: 0;
+}
+
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content p + p,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content p + p {
+    margin-top: 0.12em;
+}
+
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0 4px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #8A5CF5;
+    color: #8A5CF5;
+}
+
+/* unresolved links */
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link.internal-link.is-unresolved,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link.internal-link.is-unresolved {
+    opacity: 0.5;
+    color: #8A5CF5;
+}
+
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link.internal-link.is-unresolved:hover,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link.internal-link.is-unresolved:hover {
+    opacity: 1 !important;
+}
+
+/* resolved links */
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link:hover,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link:hover{
+    background-color: #8A5CF5;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Remove the dotted line under nav header */
+.markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link::after,
+.markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link::after {
+    content: "";
+    display: none;   
+}
+
+/* completely strip the navblock callout so it's just raw content */
+.callout[data-callout="navblock"] {
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+}
+  
+/* hide the "Navblock" title bar */
+.callout[data-callout="navblock"] > .callout-title {
+    display: none !important;
+}
+
+/* 🌙 Dark theme override for nav + tags */
+.theme-dark span.nav-header .internal-link,
+.theme-dark .markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link,
+.theme-dark .markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link {
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+/* Hover state in dark theme */
+.theme-dark span.nav-header .internal-link:hover,
+.theme-dark .markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link:hover,
+.theme-dark .markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link:hover {
+    background-color: #8A5CF5 !important;
+    color: #fff !important;
+    border-color: #8A5CF5 !important;
+}
+
+/* Unresolved links (dark theme) */
+.theme-dark span.nav-header .internal-link.is-unresolved,
+.theme-dark .markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link.is-unresolved,
+.theme-dark .markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link.is-unresolved {
+    color: #fff !important;
+    opacity: 0.5;
+}
+
+.theme-dark span.nav-header .internal-link.is-unresolved:hover,
+.theme-dark .markdown-preview-view .callout[data-callout="navblock"] .callout-content .internal-link.is-unresolved:hover,
+.theme-dark .markdown-source-view .callout[data-callout="navblock"] .callout-content .internal-link.is-unresolved:hover {
+    opacity: 1 !important;
+    color: #fff !important;
+}
+
+.callout[data-callout="navblock"] {
+    --callout-blend-mode: normal !important;
+}
+
+.mb-card{
+    border: none !important;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.metabind-home-toggles{
+    margin-top:3px;
+}
+
+.breadcrumb-wrapper{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}
+
+/* Base style for all nav links */
+.nav-header .internal-link {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0 4px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #8A5CF5;
+    color: #8A5CF5;
+}
+
+/* Unresolved notes */
+.nav-header .internal-link.is-unresolved {
+    opacity: 0.5;
+    color: #8A5CF5;
+}
+
+.nav-header .internal-link.is-unresolved:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* Hover effect (resolved notes) */
+.nav-header .internal-link:hover,
+.nav-header-white .internal-link:hover {
+    background-color: #8A5CF5;
+    color: #ffffff !important;
+}
+
+/* Remove underline/dots */
+.nav-header .internal-link::after,
+.nav-header-white .internal-link::after {
+    content: "";
+    display: none;
+}
+
+/* Remove dotted underline under the whole nav header */
+.nav-header {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* HOME NAV GLOW BUTTONS */
+
+.home-nav .internal-link{
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 30px 10px 20px 10px;
+    border-radius: 30px !important;
+    font-weight:bold;
+    text-decoration:none !important;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #8A6CF5 !important;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+}
+
+.home-nav .internal-link:hover{
+    filter:
+    drop-shadow(0 0 4px #8A6CF5)
+    drop-shadow(0 0 6px #BA9FFF); 
+}
+
+span.home-nav .internal-link:hover{
+    background-color: #8A5CF5;
+    color: #ffffff;
+}
+
+span.home-nav .internal-link::after{
+    content: "";
+    display: none;
+}
+
+
+/* For white-on-dark version */
+.nav-header-white .internal-link {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 20px 4px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.nav-header-white .internal-link:hover {
+    border-color: #8A5CF5;
+}
+
+/* Live preview nav styling */
+.markdown-preview-view .nav-header,
+.markdown-reading-view .nav-header {
+    text-align: center;
+    display: block;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.markdown-preview-view .nav-header .internal-link,
+.markdown-reading-view .nav-header .internal-link {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0 4px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 2px solid #8A5CF5;
+    color: #8A5CF5;
+}
+
+.markdown-preview-view .nav-header .internal-link:hover,
+.markdown-reading-view .nav-header .internal-link:hover {
+    background-color: #8A5CF5;
+    color: #ffffff !important;
+}
+
+.markdown-preview-view .nav-header .internal-link::after,
+.markdown-reading-view .nav-header .internal-link::after {
+    content: "";
+    display: none;
+}
+
+/* Dark theme for live preview */
+.theme-dark .markdown-preview-view .nav-header .internal-link,
+.theme-dark .markdown-reading-view .nav-header .internal-link {
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+.theme-dark .markdown-preview-view .nav-header .internal-link:hover,
+.theme-dark .markdown-reading-view .nav-header .internal-link:hover {
+    background-color: #8A5CF5 !important;
+    color: #fff !important;
+    border-color: #8A5CF5 !important;
+}
+
+/* edit the slider label font size */
+/*.mb-slider-input-label{
+    font-size: 17px;
+}*/
+
+/* make the top heading have a shadow */
+.daily-note .el-center{
+    text-shadow: 0px 1px 5px rgb(0,0,0,0.5);
+}
+
+.mb-input-wrapper:has(> .mb-slider-input) {
+    display: inline-flex;
+}
+
+.mb-slider-input.slider {
+    appearance: none;
+    width:100%;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--checkbox-border-color);
+    padding: 0;
+    margin-bottom:15px;
+    position: relative;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.mb-slider-input.slider:hover {
+    opacity: 1;
+}
+
+.mb-slider-input.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: all 0.4s ease;
+}
+
+/* edits for my home meta-bind buttons */
+
+/* dark theme -- white color */
+span.home-buttons .mb-button-inner{
+    padding: 15px;
+    margin: 0px 5px;
+    border-radius: 9999px !important;
+    font-weight: 600;
+    border: 2px solid #fff;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.mb-button-group:has(> .home-buttons){
+    display:flex !important;
+    flex-direction: row !important;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+}
+
+span.home-buttons .mb-button-inner:hover{
+    border-color: #8A5CF5;
+    background-color: #8A5CF5;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* light theme -- accent color */
+span.home-buttons.light-theme .mb-button-inner{
+    padding: 15px;
+    margin: 0px 5px;
+    border-radius: 9999px !important;
+    font-weight: 600;
+    border: 2px solid #8A5CF5;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    color: #8A5CF5;
+}
+
+span.home-buttons.light-theme .mb-button-inner:hover{
+    border-color: #8A5CF5;
+    background-color: #8A5CF5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.daily-note .el-ul .has-list-bullet li.task-list-item[data-task="<"]{
+    text-align: center;
+    display:flex !important;
+    flex-direction:row;
+    justify-content:center;
+}

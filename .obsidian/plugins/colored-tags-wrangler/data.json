@@ -1,0 +1,230 @@
+{
+  "TagColors": {
+    "ColorPicker": [
+      {
+        "tag_name": "personal/medical\nfamily/medical\nmedical\nthis-week\nfitness\nexercise\nphysical-health\nhealth",
+        "color": {
+          "r": 124,
+          "g": 24,
+          "b": 24
+        },
+        "background_color": {
+          "r": 253,
+          "g": 114,
+          "b": 114
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "chores\nhome",
+        "color": {
+          "r": 162,
+          "g": 84,
+          "b": 11
+        },
+        "background_color": {
+          "r": 255,
+          "g": 173,
+          "b": 102
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "",
+        "color": {
+          "r": 116,
+          "g": 113,
+          "b": 17
+        },
+        "background_color": {
+          "r": 238,
+          "g": 235,
+          "b": 155
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "finances\nfinances/bills\nfinances/subscriptions\nfinances/subscription\nfinances/shopping\nfinances/rent\nfinances/bill\nfinances/fastfood\nfinances/breaksfast\nfinances/lunch\nfinances/dinner\nfinances/delivery\nfinances/shopping\nfinances/weed\nfinances/junkfood\nfinances/hygiene\nfinances/latefee\nfinances/baby\nfinances/coloring\nfinances/tracking\nfinances/personal\nfinances/breakfast\nfinances/medical\ntriage/done\nfinances/christmas\nfinances/travel\nfinances/groceries",
+        "color": {
+          "r": 44,
+          "g": 122,
+          "b": 16
+        },
+        "background_color": {
+          "r": 135,
+          "g": 217,
+          "b": 108
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "family\nfriends\nfamily/Tim\nfriends/Bobbie-Jo\nfriends/Elias\nfriends/Zach\nfamily/mum\nfamily/Justin\nfamily/Theo\nfamily/Taran",
+        "color": {
+          "r": 8,
+          "g": 104,
+          "b": 72
+        },
+        "background_color": {
+          "r": 148,
+          "g": 230,
+          "b": 202
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "",
+        "color": {
+          "r": 9,
+          "g": 97,
+          "b": 119
+        },
+        "background_color": {
+          "r": 96,
+          "g": 206,
+          "b": 230
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "work\nwork/meeting\nwriting\nwriting/timeline\nwriting/templates\nwriting/plot\nwriting/braindump\nwriting/obsidian\nwriting/template\nworldbuilding\nwriting/worldbuilding\n5oJ\n5OJ\n5thofJune\n5th-of-June\n5th-of-june\n5thofjune",
+        "color": {
+          "r": 10,
+          "g": 36,
+          "b": 97
+        },
+        "background_color": {
+          "r": 95,
+          "g": 138,
+          "b": 236
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "personal/obsidian\npersonal/obsidian/scripts\npersonal/obsidian/tracker\nobsidian\npersonal\ntriage/author\nreading\ngaming\nsinging\nmusic\nself-care\npersonal/journaling\njournaling\npersonal/diary\ndiary",
+        "color": {
+          "r": 79,
+          "g": 25,
+          "b": 134
+        },
+        "background_color": {
+          "r": 191,
+          "g": 141,
+          "b": 242
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "coloringbooks\ncoloringbook\ncoloring/scan\ncoloring\ncoloringbooks/scan\ncoloringbook/scan\ncoloring/90s-girl-vibes\ncoloring/frogiverse",
+        "color": {
+          "r": 142,
+          "g": 31,
+          "b": 85
+        },
+        "background_color": {
+          "r": 251,
+          "g": 183,
+          "b": 216
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "",
+        "color": {
+          "r": 136,
+          "g": 22,
+          "b": 100
+        },
+        "background_color": {
+          "r": 245,
+          "g": 132,
+          "b": 209
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "",
+        "color": {
+          "r": 64,
+          "g": 20,
+          "b": 118
+        },
+        "background_color": {
+          "r": 182,
+          "g": 122,
+          "b": 255
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "",
+        "color": {
+          "r": 34,
+          "g": 32,
+          "b": 32
+        },
+        "background_color": {
+          "r": 97,
+          "g": 97,
+          "b": 97
+        },
+        "luminance_offset": 0.15
+      }
+    ],
+    "EnableMultipleTags": true,
+    "EnableSeparateBackground": true,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "LuminanceOffset": 0.15
+    }
+  },
+  "CSS": {
+    "NoteTags": true,
+    "NoteProperties": true,
+    "NoteBackgrounds": false,
+    "TagsNoWrap": true,
+    "TagsNoWrapText": "pre"
+  },
+  "FolderNote": {
+    "Enable": false,
+    "FolderTagLinks": [],
+    "EnableAutoDetect": true,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "ForceImportant": true,
+      "BorderRadius": "12px",
+      "Padding": "5px"
+    }
+  },
+  "Kanban": {
+    "Enable": true,
+    "EnableCards": false,
+    "EnableLists": false,
+    "HideHashtags": false,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "CardBackgroundOpacity": 0.2,
+      "CardBorderOpacity": 0.3,
+      "ListBackgroundOpacity": 0.2,
+      "ListBorderOpacity": 0.3
+    }
+  },
+  "Canvas": {
+    "Enable": false,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "CardBorderOpacity": 0.3,
+      "CardBackgroundLuminanceOffset": 0.15
+    }
+  },
+  "Debug": {
+    "Enable": false,
+    "EnableExperimentalCommands": false
+  },
+  "Info": {
+    "SettingsVersion": 14
+  }
+}

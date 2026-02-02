@@ -1,0 +1,28 @@
+{
+  "2026": [
+    { "date": "2026-01-01", "name": "New Year's Day", "type": "federal" },
+    { "date": "2026-01-19", "name": "Martin Luther King Jr. Day", "type": "federal" },
+    { "date": "2026-02-02", "name": "Groundhog Day", "type": "observance" },
+    { "date": "2026-02-14", "name": "Valentine's Day", "type": "observance" },
+    { "date": "2026-02-16", "name": "Presidents' Day", "type": "federal" },
+    { "date": "2026-03-17", "name": "St. Patrick's Day", "type": "observance" },
+    { "date": "2026-03-20", "name": "First Day of Spring (Vernal Equinox)", "type": "seasonal" },
+    { "date": "2026-04-01", "name": "April Fool's Day", "type": "observance" },
+    { "date": "2026-04-05", "name": "Easter Sunday", "type": "observance" },
+    { "date": "2026-05-10", "name": "Mother's Day", "type": "observance" },
+    { "date": "2026-05-25", "name": "Memorial Day", "type": "federal" },
+    { "date": "2026-06-21", "name": "Father's Day", "type": "observance" },
+    { "date": "2026-06-21", "name": "First Day of Summer (Summer Solstice)", "type": "seasonal" },
+    { "date": "2026-07-04", "name": "Independence Day", "type": "federal" },
+    { "date": "2026-09-07", "name": "Labor Day", "type": "federal" },
+    { "date": "2026-09-22", "name": "First Day of Fall (Autumnal Equinox)", "type": "seasonal" },
+    { "date": "2026-10-12", "name": "Columbus Day", "type": "federal" },
+    { "date": "2026-10-31", "name": "Halloween", "type": "observance" },
+    { "date": "2026-11-11", "name": "Veterans Day", "type": "federal" },
+    { "date": "2026-11-26", "name": "Thanksgiving", "type": "federal" },
+    { "date": "2026-12-21", "name": "First Day of Winter (Winter Solstice)", "type": "seasonal" },
+    { "date": "2026-12-24", "name": "Christmas Eve", "type": "observance" },
+    { "date": "2026-12-25", "name": "Christmas Day", "type": "federal" },
+    { "date": "2026-12-31", "name": "New Year's Eve", "type": "observance" }
+  ]
+}

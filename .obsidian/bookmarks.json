@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1760633327909,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1759759730950,
+          "path": "5TH OF JUNE/5OJ Series Bible/00_Dashboard/Obsidian Cleanup Plan.md",
+          "title": ""
+        },
+        {
+          "type": "file",
+          "ctime": 1759077648883,
+          "path": "SYSTEM/_media/images/5OJ/Nexus-attachments/chatgpt/images/dalle_53f0efcb-e95e-4b1f-aac9-7c0dcf8ef540_1536x1024.png",
+          "title": "5th of June candid b&w image"
+        },
+        {
+          "type": "file",
+          "ctime": 1758676748557,
+          "path": "5TH OF JUNE/5OJ Series Bible/00_Dashboard/Triage Queue.md",
+          "title": "Triage Queue"
+        }
+      ],
+      "title": "5th of June"
+    },
+    {
+      "type": "group",
+      "ctime": 1760633334700,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1760633322228,
+          "path": "Digital Hobonichi/2025/10-October/2025-10-15.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1760288393662,
+          "path": "SYSTEM/SIGNAL GUIDE.md"
+        }
+      ],
+      "title": "Digital Hobonichi"
+    },
+    {
+      "type": "group",
+      "ctime": 1760633342539,
+      "items": [
+        {
+          "type": "graph",
+          "ctime": 1759083471649,
+          "title": "Orbital Chart",
+          "options": {
+            "collapse-filter": false,
+            "search": "",
+            "showTags": true,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "collapse-color-groups": false,
+            "colorGroups": [
+              {
+                "query": "path:\"Digital Hobonichi\"  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 14048348
+                }
+              },
+              {
+                "query": "path:data/Finances  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6084188
+                }
+              },
+              {
+                "query": "tag:#sources/novelcrafter  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6084269
+                }
+              },
+              {
+                "query": "tag:#sources/gdocs  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6073814
+                }
+              },
+              {
+                "query": "tag:#sources/chatgpt  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6053078
+                }
+              },
+              {
+                "query": "tag:#sources/onenote  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 11361494
+                }
+              },
+              {
+                "query": "path:SYSTEM  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 14048429
+                }
+              },
+              {
+                "query": "path:\"5TH OF JUNE/5OJ Series Bible\"  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 14069084
+                }
+              },
+              {
+                "query": "path:\"5TH OF JUNE/Note Imports/NovelCrafter Information\"  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6084269
+                }
+              },
+              {
+                "query": "path:\"5TH OF JUNE/Note Imports/Google Docs Notes\"  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6073814
+                }
+              },
+              {
+                "query": "path:\"5TH OF JUNE/Note Imports/Chat Logs - Nexus Imports\"  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 6053037
+                }
+              },
+              {
+                "query": "path:\"5TH OF JUNE/Note Imports/Legacy - OneNote Archive\"  ",
+                "color": {
+                  "a": 1,
+                  "rgb": 11361750
+                }
+              }
+            ],
+            "collapse-display": true,
+            "showArrow": true,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1.15971272786458,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": true,
+            "centerStrength": 0.524698893229167,
+            "repelStrength": 9.09505208333333,
+            "linkStrength": 1,
+            "linkDistance": 357,
+            "scale": 0.35942059671678883,
+            "close": false
+          }
+        }
+      ],
+      "title": "META"
+    },
+    {
+      "type": "group",
+      "ctime": 1760633358157,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1758745466227,
+          "path": "INBOX/00_MAIN.md",
+          "title": "Tasks Inbox"
+        }
+      ],
+      "title": "Tasks"
+    },
+    {
+      "type": "file",
+      "ctime": 1764118560602,
+      "path": "NORTH STAR.md",
+      "title": "NORTH STAR"
+    },
+    {
+      "type": "file",
+      "ctime": 1765139666566,
+      "path": "THE BLACK HOLE/Completed Tasks.md"
+    }
+  ]
+}

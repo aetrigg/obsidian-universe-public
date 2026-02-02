@@ -1,0 +1,37 @@
+{
+  "defaultOverviewSettings": {
+    "id": "",
+    "folderPath": "",
+    "title": "{{folderName}} overview",
+    "showTitle": false,
+    "depth": 5,
+    "includeTypes": [
+      "folder",
+      "markdown",
+      "canvas",
+      "image"
+    ],
+    "style": "list",
+    "disableFileTag": false,
+    "sortBy": "name",
+    "sortByAsc": true,
+    "showEmptyFolders": true,
+    "onlyIncludeSubfolders": false,
+    "storeFolderCondition": true,
+    "showFolderNotes": false,
+    "disableCollapseIcon": true,
+    "alwaysCollapse": false,
+    "autoSync": true,
+    "allowDragAndDrop": true,
+    "hideLinkList": true,
+    "hideFolderOverview": false,
+    "useActualLinks": false,
+    "fmtpIntegration": false,
+    "titleSize": 1,
+    "isInCallout": false
+  },
+  "globalSettings": {
+    "autoUpdateLinks": false
+  },
+  "firstTimeInsertOverview": false
+}

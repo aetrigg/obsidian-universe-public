@@ -1,0 +1,1425 @@
+{
+  "choices": [
+    {
+      "id": "47ca0813-868c-497e-8e0d-4531db68d5e3",
+      "name": "Mark Bill As Paid",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Mark Bill As Paid",
+        "id": "a783f5cb-8762-490e-be6a-505841e8a3f6",
+        "commands": [
+          {
+            "name": "markBillAsPaid",
+            "type": "UserScript",
+            "id": "642b1fb5-d6f6-42df-b347-815e4a60f632",
+            "path": "SYSTEM/_scripts/markBillAsPaid.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "a7904d0d-a6dd-43bd-9fca-aea280ced48c",
+      "name": "Mark Bill As Unpaid",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Mark Bill As Unpaid",
+        "id": "7270e1c0-7835-487d-a466-dea9b6da3bfc",
+        "commands": [
+          {
+            "name": "markBillAsUnpaid",
+            "type": "UserScript",
+            "id": "785d7fa9-2da0-44e0-8041-25e66b544024",
+            "path": "SYSTEM/_scripts/markBillAsUnpaid.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "4f98651a-3dff-4d5e-8ce1-b46f5630e16b",
+      "name": "Daily Log Choice",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "fae54d57-f897-4d5b-8710-e29c9599a641",
+          "name": "Explore/Research",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [E] {{DATE:hh:mm a}} // {{VALUE:Enter log}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "ca65c961-ef5b-45b9-a8b2-1986affa5efd",
+          "name": "Bookmark",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [b] {{DATE:hh:mm a}} // {{VALUE:Thoughts on this reference}}, [{{VALUE:SourceName/Title}}]({{VALUE: URL}})"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "72c228d8-9d3a-4c78-982e-f8bec47c9c6e",
+          "name": "Idea",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [i] {{DATE:hh:mm a}} // {{VALUE:Enter idea}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "29375588-6ce9-4a15-8c8c-443e559dea6f",
+          "name": "Pro",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [p] {{DATE:hh:mm a}} // {{VALUE:Enter pro}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "b420e351-1cea-40d9-9712-599dd63deb27",
+          "name": "Con",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [c] {{DATE:hh:mm a}} // {{VALUE:Enter con}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "3f9cde4f-9a77-4c42-b07a-390e577d2035",
+          "name": "Heart",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [h] {{DATE:hh:mm a}} // {{VALUE:Enter love}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "02060ab0-1d52-4eec-a497-14addc592ed5",
+          "name": "Star",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [s] {{DATE:hh:mm a}} // {{VALUE:Enter star}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "ccc115e8-2e06-4fe7-9eec-12a1bf888320",
+          "name": "Expenses / Income",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [$] {{DATE:hh:mm a}} // {{VALUE:Enter expense/income}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "b0b3ff99-4501-4851-a36a-5af60fbfe429",
+          "name": "Location",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [l] {{DATE:hh:mm a}} // {{VALUE:Enter location}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "834c39f7-85a1-4dd3-92ee-f17ff87b32cc",
+          "name": "Food",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [f] {{DATE:hh:mm a}} // {{VALUE:Enter food}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "20e7fa45-751a-4cad-a225-376f3ad3ef15",
+          "name": "Mail",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [@] {{DATE:hh:mm a}} // {{VALUE:Enter mail}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "c68aee22-1e72-4526-8bcc-c8e3ade6bdc3",
+          "name": "Call",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [#] {{DATE:hh:mm a}} // {{VALUE:Enter call}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "d207fdfb-0544-4007-a29a-48d7cdf82a45",
+          "name": "Message",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [m] {{DATE:hh:mm a}} // {{VALUE:Enter message}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "22b3a8d9-2468-4bc1-8433-459e4e819a7a",
+          "name": "Funny",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [F] {{DATE:hh:mm a}} // {{VALUE:Enter funny}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "d13a9e10-d348-4d10-9cb8-6fd22f6097d3",
+          "name": "TV",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [T] {{DATE:hh:mm a}} // {{VALUE:Enter TV}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "cbee33ba-7a7f-4a1a-ac9f-e286e549856f",
+          "name": "Music",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [M] {{DATE:hh:mm a}} // {{VALUE:Enter music}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "e511dad8-a799-4823-b3b9-d732fc8a9dab",
+          "name": "Writing",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [W] {{DATE:hh:mm a}} // {{VALUE:Enter writing}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "1b405721-7cc1-4c58-a203-8fb2de8c77c9",
+          "name": "Reading",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [R] {{DATE:hh:mm a}} // {{VALUE:Enter reading}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "8adcbb5a-1c13-4a70-b798-e7feefa38d0f",
+          "name": "Planning",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [P] {{DATE:hh:mm a}} // {{VALUE:Enter planning}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "c00d934a-8ecd-47c9-a240-fcbd989f8577",
+          "name": "Gaming",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [G] {{DATE:hh:mm a}} // {{VALUE:Enter gaming}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "f7c1fb92-3059-44f3-bd7a-d19cd406bb88",
+          "name": "Browsing",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [B] {{DATE:hh:mm a}} // {{VALUE:Enter browsing}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "464a7a90-e48d-483e-93ae-7ecfb1fc4851",
+          "name": "Theo",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [t] {{DATE:hh:mm a}} // {{VALUE:Enter Theo}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "226223f5-ced6-4c17-901c-ce01e115aa62",
+          "name": "Obsidian",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [o] {{DATE:hh:mm a}} // {{VALUE:Enter obsidian}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "fed0759b-35c4-4f56-92a6-6f36194a181e",
+          "name": "Coloring",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [C] {{DATE:hh:mm a}} // {{VALUE:Enter coloring}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "a16650ab-3406-4484-b83c-d8098dea5344",
+          "name": "Scripting / Coding",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [S] {{DATE:hh:mm a}} // {{VALUE:Enter scripting/coding}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "e5740d32-d3ac-44aa-88f2-90c6fa093d2b",
+          "name": "Weed",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [w] {{DATE:hh:mm a}} // {{VALUE:Enter weed}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "f09e2603-8cfe-483f-9d4d-79f1e81e4353",
+          "name": "Dream",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [D] {{DATE:hh:mm a}} // {{VALUE:Enter dream}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "f047a99c-aa7e-4c1a-a7c9-83c406410fb3",
+          "name": "Home",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [H] {{DATE:hh:mm a}} // {{VALUE:Enter home}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "d9d14be5-28d6-401b-9d7d-057ea41abb20",
+          "name": "Migraine / Pain",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [z] {{DATE:hh:mm a}} // {{VALUE:Enter migraine/pain}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "13b03151-8aba-4432-8234-dfdabc875979",
+          "name": "Sleep / Rest",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- [Z] {{DATE:hh:mm a}} // {{VALUE:Enter sleep/rest}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        },
+        {
+          "id": "8c335247-3dc2-43fc-9f8c-0a4d013eaea6",
+          "name": "Note",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "Digital Hobonichi/{{DATE:YYYY}}/{{DATE:MM-MMMM}}/{{date}}",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "- {{DATE:hh:mm a}} // {{VALUE:Enter note}}"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## :LiCalendarClock: Daily Log",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "36b57a4f-5ec5-4176-bae0-6b386089f8c4",
+      "name": "Insert Polaroid",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Insert Polaroid",
+        "id": "d0402cd7-c2af-4115-9447-1cb648218e57",
+        "commands": [
+          {
+            "name": "polaroid",
+            "type": "UserScript",
+            "id": "026889b0-d4ee-4340-a212-f74ba72830d1",
+            "path": "SYSTEM/_scripts/polaroid.js",
+            "settings": {}
+          },
+          {
+            "name": "Google Photos: Insert Google Photo",
+            "type": "Obsidian",
+            "id": "19a1bb64-6e40-41d7-be41-5aff50c63c90",
+            "commandId": "google-photos:insert-google-photo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a99842c9-700d-4c3b-b808-45226935e604",
+      "name": "Add New Mission",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "INBOX/99_UNSORTED.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": false,
+        "format": ""
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": true,
+      "task": true,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      }
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "SYSTEM/_templates",
+  "announceUpdates": true,
+  "version": "2.6.0",
+  "globalVariables": {},
+  "onePageInputEnabled": false,
+  "disableOnlineFeatures": true,
+  "enableRibbonIcon": false,
+  "showCaptureNotification": true,
+  "showInputCancellationNotification": false,
+  "enableTemplatePropertyTypes": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "text-davinci-003",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-32k",
+            "maxTokens": 32768
+          },
+          {
+            "name": "gpt-4-1106-preview",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4-turbo",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000
+          }
+        ],
+        "autoSyncModels": false
+      },
+      {
+        "name": "Gemini",
+        "endpoint": "https://generativelanguage.googleapis.com",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "gemini-1.5-pro",
+            "maxTokens": 1000000
+          },
+          {
+            "name": "gemini-1.5-flash",
+            "maxTokens": 1000000
+          },
+          {
+            "name": "gemini-1.5-flash-8b",
+            "maxTokens": 1000000
+          }
+        ],
+        "autoSyncModels": false
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true,
+    "removeMacroIndirection": true,
+    "migrateFileOpeningSettings": true
+  }
+}

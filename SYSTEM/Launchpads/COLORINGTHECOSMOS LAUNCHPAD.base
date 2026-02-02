@@ -1,0 +1,8 @@
+filters:
+  or:
+    - file.name == "Color Palettes MOC"
+    - file.path == "OBSERVATORIES/Coloring Book Observatory.base"
+views:
+  - type: cards
+    name: Table
+    image: note.image

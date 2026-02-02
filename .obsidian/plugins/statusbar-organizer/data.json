@@ -1,0 +1,97 @@
+{
+  "activePreset": "Default",
+  "activeFullscreenPreset": "Default",
+  "separateFullscreenPreset": true,
+  "presets": {
+    "Default": {
+      "plugin-backlink;1": {
+        "position": 0,
+        "visible": true
+      },
+      "plugin-editor-status;1": {
+        "position": 1,
+        "visible": true
+      },
+      "plugin-word-count;1": {
+        "position": 2,
+        "visible": true
+      },
+      "plugin-sync;1": {
+        "position": 3,
+        "visible": true
+      },
+      "plugin-obsidian-plugin-update-tracker;1": {
+        "position": 4,
+        "visible": true
+      },
+      "plugin-longform;1": {
+        "position": 5,
+        "visible": false
+      },
+      "plugin-obsidian-reading-time;1": {
+        "position": 6,
+        "visible": true
+      },
+      "plugin-obsidian-grandfather;1": {
+        "position": 7,
+        "visible": true
+      },
+      "plugin-obsidian-ocr;1": {
+        "position": 8,
+        "visible": false
+      },
+      "plugin-obsidian-day-planner;1": {
+        "position": 9,
+        "visible": false
+      },
+      "plugin-editing-toolbar-editingToolbar-statusbar-button;1": {
+        "position": 10,
+        "visible": false
+      },
+      "plugin-visual-crossing-weather;1": {
+        "position": 11,
+        "visible": false
+      },
+      "plugin-visual-crossing-weather;2": {
+        "position": 12,
+        "visible": false
+      },
+      "plugin-obsidian-stille;1": {
+        "position": 13,
+        "visible": true
+      },
+      "plugin-extract-highlights-plugin;1": {
+        "position": 14,
+        "visible": false
+      },
+      "plugin-bin-theme-controller;1": {
+        "position": 15,
+        "visible": false
+      },
+      "plugin-focus-time;1": {
+        "position": 16,
+        "visible": true
+      },
+      "plugin-completed-task-display;1": {
+        "position": 17,
+        "visible": false
+      },
+      "plugin-obsidian-git;1": {
+        "position": 19,
+        "visible": true
+      },
+      "plugin-obsidian-git;2": {
+        "position": 20,
+        "visible": true
+      },
+      "plugin-smart-connections;1": {
+        "position": 21,
+        "visible": false
+      }
+    }
+  },
+  "presetsOrder": [
+    "Default"
+  ],
+  "version": "2.1.4"
+}

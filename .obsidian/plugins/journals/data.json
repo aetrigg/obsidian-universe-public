@@ -1,0 +1,593 @@
+{
+  "version": 3,
+  "ui": {
+    "calendarShelf": null
+  },
+  "pendingMigrations": [],
+  "dismissedNotifications": [],
+  "useShelves": false,
+  "showReloadHint": false,
+  "openOnStartup": "",
+  "journals": {
+    "Daily Notes": {
+      "name": "Daily Notes",
+      "shelves": [],
+      "write": {
+        "type": "day"
+      },
+      "confirmCreation": false,
+      "nameTemplate": "{{date}}",
+      "dateFormat": "YYYY-MM-DD",
+      "folder": "Digital Hobonichi/{{date:YYYY}}/{{date:MM-MMMM}}",
+      "templates": [
+        "SYSTEM/_templates/Hobonichi/Daily New.md"
+      ],
+      "start": "",
+      "end": {
+        "type": "never"
+      },
+      "index": {
+        "enabled": false,
+        "anchorDate": "",
+        "anchorIndex": 1,
+        "allowBefore": false,
+        "type": "increment",
+        "resetAfter": 2
+      },
+      "autoCreate": false,
+      "commands": [
+        {
+          "icon": "lucide-calendar",
+          "name": "Open Today's Note",
+          "type": "same",
+          "context": "today",
+          "showInRibbon": true,
+          "openMode": "tab"
+        },
+        {
+          "icon": "",
+          "name": "test open",
+          "type": "same",
+          "context": "today",
+          "showInRibbon": false,
+          "openMode": "active"
+        }
+      ],
+      "decorations": [
+        {
+          "mode": "and",
+          "conditions": [
+            {
+              "type": "has-note"
+            }
+          ],
+          "styles": [
+            {
+              "type": "shape",
+              "size": 0.4,
+              "shape": "circle",
+              "color": {
+                "type": "theme",
+                "name": "interactive-accent"
+              },
+              "placement_x": "center",
+              "placement_y": "bottom"
+            }
+          ]
+        }
+      ],
+      "navBlock": {
+        "type": "create",
+        "decorateWholeBlock": false,
+        "rows": [
+          {
+            "template": "{{date:ddd}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "none",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:D}}",
+            "fontSize": 3,
+            "bold": true,
+            "italic": false,
+            "link": "self",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": true
+          },
+          {
+            "template": "{{relative_date}}",
+            "fontSize": 0.7,
+            "bold": false,
+            "italic": false,
+            "link": "none",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:[W]w}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "week",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:MMMM}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "month",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:YYYY}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "year",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          }
+        ]
+      },
+      "calendarViewBlock": {
+        "rows": [],
+        "decorateWholeBlock": false
+      },
+      "frontmatter": {
+        "dateField": "date",
+        "addStartDate": false,
+        "startDateField": "",
+        "addEndDate": false,
+        "endDateField": "",
+        "indexField": ""
+      }
+    },
+    "Monthly Journal": {
+      "name": "Monthly Journal",
+      "shelves": [],
+      "write": {
+        "type": "month"
+      },
+      "confirmCreation": false,
+      "nameTemplate": "{{date}}",
+      "dateFormat": "MMMM YYYY",
+      "folder": "Digital Hobonichi/{{date:YYYY}}/Monthly Overview",
+      "templates": [
+        "SYSTEM/_templates/Hobonichi/Monthly Overview_Updated_01-26.md"
+      ],
+      "start": "",
+      "end": {
+        "type": "never"
+      },
+      "index": {
+        "enabled": false,
+        "anchorDate": "",
+        "anchorIndex": 1,
+        "allowBefore": false,
+        "type": "increment",
+        "resetAfter": 2
+      },
+      "autoCreate": false,
+      "commands": [
+        {
+          "icon": "lucide-calendar-days",
+          "name": "Open This Month's Note",
+          "type": "same",
+          "context": "today",
+          "showInRibbon": true,
+          "openMode": "tab"
+        }
+      ],
+      "decorations": [
+        {
+          "mode": "and",
+          "conditions": [
+            {
+              "type": "has-note"
+            }
+          ],
+          "styles": [
+            {
+              "type": "shape",
+              "size": 0.4,
+              "shape": "circle",
+              "color": {
+                "type": "theme",
+                "name": "interactive-accent"
+              },
+              "placement_x": "center",
+              "placement_y": "bottom"
+            }
+          ]
+        }
+      ],
+      "navBlock": {
+        "type": "create",
+        "decorateWholeBlock": false,
+        "rows": [
+          {
+            "template": "{{date:MMMM}}",
+            "fontSize": 3,
+            "bold": true,
+            "italic": false,
+            "link": "self",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": true
+          },
+          {
+            "template": "{{relative_date}}",
+            "fontSize": 0.7,
+            "bold": false,
+            "italic": false,
+            "link": "none",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:YYYY}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "year",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          }
+        ]
+      },
+      "calendarViewBlock": {
+        "rows": [],
+        "decorateWholeBlock": false
+      },
+      "frontmatter": {
+        "dateField": "date_created",
+        "addStartDate": false,
+        "startDateField": "",
+        "addEndDate": false,
+        "endDateField": "",
+        "indexField": ""
+      }
+    },
+    "Weekly Tasks": {
+      "name": "Weekly Tasks",
+      "shelves": [],
+      "write": {
+        "type": "week"
+      },
+      "confirmCreation": false,
+      "nameTemplate": "{{date}}",
+      "dateFormat": "YYYY-[W]w",
+      "folder": "Digital Hobonichi/{{date:YYYY}}/Weekly Overview",
+      "templates": [
+        "SYSTEM/_templates/Hobonichi/Weekly.md"
+      ],
+      "start": "",
+      "end": {
+        "type": "never"
+      },
+      "index": {
+        "enabled": false,
+        "anchorDate": "",
+        "anchorIndex": 1,
+        "allowBefore": false,
+        "type": "increment",
+        "resetAfter": 2
+      },
+      "autoCreate": false,
+      "commands": [
+        {
+          "icon": "lucide-calendar-check",
+          "name": "Open Weekly Tasks",
+          "type": "same",
+          "context": "today",
+          "showInRibbon": true,
+          "openMode": "tab"
+        }
+      ],
+      "decorations": [
+        {
+          "mode": "and",
+          "conditions": [
+            {
+              "type": "has-note"
+            }
+          ],
+          "styles": [
+            {
+              "type": "shape",
+              "size": 0.4,
+              "shape": "circle",
+              "color": {
+                "type": "theme",
+                "name": "interactive-accent"
+              },
+              "placement_x": "center",
+              "placement_y": "bottom"
+            }
+          ]
+        }
+      ],
+      "navBlock": {
+        "type": "create",
+        "decorateWholeBlock": false,
+        "rows": [
+          {
+            "template": "{{date:[W]w}}",
+            "fontSize": 3,
+            "bold": true,
+            "italic": false,
+            "link": "self",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": true
+          },
+          {
+            "template": "{{relative_date}}",
+            "fontSize": 0.7,
+            "bold": false,
+            "italic": false,
+            "link": "none",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:MMMM}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "month",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          },
+          {
+            "template": "{{date:YYYY}}",
+            "fontSize": 1,
+            "bold": false,
+            "italic": false,
+            "link": "year",
+            "journal": "",
+            "color": {
+              "type": "theme",
+              "name": "text-normal"
+            },
+            "background": {
+              "type": "transparent"
+            },
+            "addDecorations": false
+          }
+        ]
+      },
+      "calendarViewBlock": {
+        "rows": [],
+        "decorateWholeBlock": false
+      },
+      "frontmatter": {
+        "dateField": "",
+        "addStartDate": false,
+        "startDateField": "",
+        "addEndDate": false,
+        "endDateField": "",
+        "indexField": ""
+      }
+    }
+  },
+  "shelves": {},
+  "commands": [
+    {
+      "name": "Open today's note",
+      "writeType": "day",
+      "type": "same",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open weekly note",
+      "writeType": "week",
+      "type": "same",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open monthly note",
+      "writeType": "month",
+      "type": "same",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open yearly note",
+      "writeType": "year",
+      "type": "same",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open tomorrow's note",
+      "writeType": "day",
+      "type": "next",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open next week note",
+      "writeType": "week",
+      "type": "next",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open next month note",
+      "writeType": "month",
+      "type": "next",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open next year note",
+      "writeType": "year",
+      "type": "next",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open yesterday's note",
+      "writeType": "day",
+      "type": "previous",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open last week note",
+      "writeType": "week",
+      "type": "previous",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open last month note",
+      "writeType": "month",
+      "type": "previous",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    },
+    {
+      "name": "Open last year note",
+      "writeType": "year",
+      "type": "previous",
+      "openMode": "tab",
+      "showInRibbon": false,
+      "icon": ""
+    }
+  ],
+  "calendar": {
+    "dow": 1,
+    "doy": 4,
+    "global": true
+  },
+  "calendarView": {
+    "display": "month",
+    "leaf": "left",
+    "weeks": "none",
+    "todayMode": "create",
+    "pickMode": "switch_date",
+    "todayStyle": {
+      "color": {
+        "type": "theme",
+        "name": "text-accent"
+      },
+      "background": {
+        "type": "transparent"
+      }
+    },
+    "activeStyle": {
+      "color": {
+        "type": "theme",
+        "name": "text-on-accent"
+      },
+      "background": {
+        "type": "theme",
+        "name": "interactive-accent"
+      }
+    }
+  }
+}

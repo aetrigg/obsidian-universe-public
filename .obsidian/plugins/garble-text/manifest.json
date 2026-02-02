@@ -1,0 +1,9 @@
+{
+    "id": "simple-garble",
+    "name": "Simple Garble",
+    "version": "1.0.0",
+    "minAppVersion": "0.12.0",
+    "description": "Toggle garble text",
+    "author": "You",
+    "isDesktopOnly": false
+  }

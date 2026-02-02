@@ -1,0 +1,19 @@
+.obsidian/cache
+.obsidian/workspace.json
+.trash/
+.DS_Store
+.obsidian/cache
+.obsidian/workspace.json
+.obsidian/plugins/obsidian-backup/*
+.trash/
+.DS_Store
+Thumbs.db
+.obsidian/plugins/focus-time
+/.keep-the-rhyhtm/backup-2025-10-01.json
+/.obsidian-ocr.sqlite
+.smtcmp_vector_db.tar.gz
+
+
+
+# Ignore Smart Environment folder
+.smart-env

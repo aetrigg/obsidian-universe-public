@@ -1,0 +1,67 @@
+/* Glowing Stars Horizontal Rule Snippet */
+/* To use: add 'cssclasses: glowing-stars' to your note's Properties/Frontmatter */
+
+/* --- Reading View / Preview Mode --- */
+.glowing-stars .markdown-preview-view hr,
+.glowing-stars hr {
+    margin: 2em 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: relative;
+    overflow: visible;
+    opacity: 1 !important;
+    height: 1em;
+}
+
+.glowing-stars hr::before {
+    font-size: 1.7em;
+    content: "⋆⁺★₊⋆₊✦₊⋆★₊⁺⋆";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: white;
+    background-color: transparent;
+    z-index: 10;
+    text-shadow:
+    0 0 6px #8A5CF5,
+    0 0 8px #8A6CF5,
+    0 0 14px #BA9FFF,
+    0 0 24px #C3B1FF;
+    visibility: visible;
+}
+
+/* --- Live Preview / Editing Mode --- */
+
+/* Target the HR element only when the note has the 'glowing-stars' class */
+.glowing-stars .markdown-source-view.mod-cm6 .cm-hr,
+.glowing-stars .cm-hr {
+    visibility: hidden;
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 1em;
+    margin: 2em 0;
+}
+
+/* Add the stars */
+.glowing-stars .markdown-source-view.mod-cm6 .cm-hr::after,
+.glowing-stars .cm-hr::after {
+    content: "⋆⁺★₊⋆₊✦₊⋆★₊⁺⋆";
+    visibility: visible;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: white;
+    background-color: transparent;
+    padding: 0 1rem;
+    text-shadow:
+    0 0 8px #8A6CF5,
+    0 0 14px #BA9FFF,
+    0 0 24px #C3B1FF;
+}

@@ -1,0 +1,373 @@
+{
+  "presets": {
+    "this_file": "path includes {{query.file.path}}",
+    "this_folder": "folder includes {{query.file.folder}}",
+    "this_folder_only": "filter by function task.file.folder === query.file.folder",
+    "this_root": "root includes {{query.file.root}}",
+    "hide_date_fields": "# Hide any values for all date fields\nhide due date\nhide scheduled date\nhide start date\nhide created date\nhide done date\nhide cancelled date",
+    "hide_non_date_fields": "# Hide all the non-date fields, but not tags\nhide id\nhide depends on\nhide recurrence rule\nhide on completion\nhide priority",
+    "hide_query_elements": "# Hide postpone, edit and backinks\nhide postpone button\nhide edit button\nhide backlinks",
+    "hide_everything": "# Hide everything except description and any tags\npreset hide_date_fields\npreset hide_non_date_fields\npreset hide_query_elements"
+  },
+  "globalQuery": "",
+  "globalFilter": "",
+  "removeGlobalFilter": false,
+  "taskFormat": "tasksPluginEmoji",
+  "setCreatedDate": false,
+  "setDoneDate": false,
+  "setCancelledDate": true,
+  "autoSuggestInEditor": false,
+  "autoSuggestMinMatch": 0,
+  "autoSuggestMaxItems": 20,
+  "provideAccessKeys": true,
+  "useFilenameAsScheduledDate": false,
+  "filenameAsScheduledDateFormat": "",
+  "filenameAsDateFolders": [],
+  "recurrenceOnNextLine": true,
+  "removeScheduledDateOnRecurrence": false,
+  "statusSettings": {
+    "coreStatuses": [
+      {
+        "symbol": " ",
+        "name": "Todo",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "TODO"
+      },
+      {
+        "symbol": "x",
+        "name": "Done",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "DONE"
+      }
+    ],
+    "customStatuses": [
+      {
+        "symbol": "/",
+        "name": "In Progress",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "IN_PROGRESS"
+      },
+      {
+        "symbol": "-",
+        "name": "Cancelled",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "CANCELLED"
+      },
+      {
+        "symbol": "w",
+        "name": "Weed",
+        "nextStatusSymbol": "w",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "W",
+        "name": "Writing",
+        "nextStatusSymbol": "W",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "E",
+        "name": "Explore/Research",
+        "nextStatusSymbol": "E",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "t",
+        "name": "Theo",
+        "nextStatusSymbol": "t",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "T",
+        "name": "travel",
+        "nextStatusSymbol": "T",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "T",
+        "name": "TV",
+        "nextStatusSymbol": "t",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "u",
+        "name": "Up",
+        "nextStatusSymbol": "d",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "d",
+        "name": "Down",
+        "nextStatusSymbol": "u",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "U",
+        "name": "User",
+        "nextStatusSymbol": "U",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "i",
+        "name": "Idea",
+        "nextStatusSymbol": "i",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "p",
+        "name": "Pro",
+        "nextStatusSymbol": "c",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "c",
+        "name": "Con",
+        "nextStatusSymbol": "p",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "a",
+        "name": "Anchor",
+        "nextStatusSymbol": "a",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "f",
+        "name": "Food",
+        "nextStatusSymbol": "f",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "g",
+        "name": "Geolocation",
+        "nextStatusSymbol": "g",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "G",
+        "name": "Gaming",
+        "nextStatusSymbol": "G",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "S",
+        "name": "Style",
+        "nextStatusSymbol": "S",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "h",
+        "name": "Heart",
+        "nextStatusSymbol": "h",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "H",
+        "name": "Home",
+        "nextStatusSymbol": "H",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "l",
+        "name": "Location",
+        "nextStatusSymbol": "l",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "L",
+        "name": "Link",
+        "nextStatusSymbol": "L",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "z",
+        "name": "Migraine",
+        "nextStatusSymbol": "z",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "b",
+        "name": "Bookmark",
+        "nextStatusSymbol": "b",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "B",
+        "name": "Blood",
+        "nextStatusSymbol": "B",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "n",
+        "name": "Note",
+        "nextStatusSymbol": "n",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "m",
+        "name": "Message",
+        "nextStatusSymbol": "m",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "M",
+        "name": "Music",
+        "nextStatusSymbol": "M",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "<",
+        "name": "Event",
+        "nextStatusSymbol": "<",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": ">",
+        "name": "Rescheduled",
+        "nextStatusSymbol": ">",
+        "availableAsCommand": false,
+        "type": "TODO"
+      },
+      {
+        "symbol": "?",
+        "name": "Question",
+        "nextStatusSymbol": "?",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "!",
+        "name": "Urgent",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "TODO"
+      },
+      {
+        "symbol": "$",
+        "name": "Expense/Income",
+        "nextStatusSymbol": "$",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "*",
+        "name": "Star",
+        "nextStatusSymbol": "*",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "o",
+        "name": "Obsidian",
+        "nextStatusSymbol": "o",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "@",
+        "name": "Mail",
+        "nextStatusSymbol": "@",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "#",
+        "name": "Call",
+        "nextStatusSymbol": "#",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "F",
+        "name": "Film",
+        "nextStatusSymbol": "F",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "R",
+        "name": "Reading",
+        "nextStatusSymbol": "R",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "C",
+        "name": "Coloring",
+        "nextStatusSymbol": "C",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "S",
+        "name": "Scripting/Coding",
+        "nextStatusSymbol": "S",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      },
+      {
+        "symbol": "g",
+        "name": "Gift Idea",
+        "nextStatusSymbol": "g",
+        "availableAsCommand": false,
+        "type": "NON_TASK"
+      }
+    ]
+  },
+  "features": {
+    "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true
+  },
+  "generalSettings": {},
+  "headingOpened": {
+    "Core Statuses": true,
+    "Custom Statuses": true
+  },
+  "debugSettings": {
+    "ignoreSortInstructions": false,
+    "showTaskHiddenData": false,
+    "recordTimings": false
+  },
+  "loggingOptions": {
+    "minLevels": {
+      "": "info",
+      "tasks": "info",
+      "tasks.Cache": "info",
+      "tasks.Events": "info",
+      "tasks.File": "info",
+      "tasks.Query": "info",
+      "tasks.Task": "info"
+    }
+  }
+}

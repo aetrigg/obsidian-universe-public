@@ -1,0 +1,16 @@
+{
+  "debounceTimeout": 300,
+  "ignoreOpenFiles": false,
+  "ignoreForceViewAll": false,
+  "folders": [
+    {
+      "folder": "Digital Hobonichi/2026/Monthly Overview",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "folder": "OBSERVATORIES/Finances",
+      "viewMode": "obsidianUIMode: preview"
+    }
+  ],
+  "files": []
+}

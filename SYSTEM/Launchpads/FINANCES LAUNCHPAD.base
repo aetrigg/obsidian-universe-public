@@ -1,0 +1,7 @@
+filters:
+  and:
+    - file.folder == "OBSERVATORIES/Finances"
+views:
+  - type: cards
+    name: FINANCES LAUNCHPAD
+    image: note.image

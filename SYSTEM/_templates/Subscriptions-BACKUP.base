@@ -1,0 +1,266 @@
+model:
+  version: 1
+  kind: Table
+  columns: []
+pluginVersion: 1.0.0
+filters:
+  and:
+    - file.folder == "Finance/Subscriptions"
+    - file.ext == "md"
+    - file.name != "Subscriptions"
+formulas:
+  icon: image(if(favicon, favicon, "https://www.google.com/s2/favicons?domain="+url))
+  enabled: endDate>=now().date() || formula.isRenewing
+  price-adjusted: (formula["shared-adjustment"] + price).toFixed(2)
+  shared-adjustment: (number(if(note["share-price"], -number(note["share-price"]) * shared, 0)))
+  next-payment-date: |-
+    if(cycle.endsWith("d"),
+       startDate + duration((((today() - startDate).days/number(cycle)).ceil() * 28) + "d"),
+       if(cycle.endsWith("M"),
+        startDate + duration((((today() - startDate).months/number(cycle)).ceil() * number(cycle)) + "M"),
+          if(cycle.endsWith("y"),
+            startDate + duration((((today() - startDate).years/number(cycle)).ceil() * number(cycle)) + "y"),
+             startDate
+          )
+       )
+    )
+  started: startDate.relative()
+  duration: (if (endDate, endDate, now()))-startDate
+  next-payment-duration: if (formula["next-payment-date"].date() == today(), "TODAY",date(formula["next-payment-date"]).relative())
+  isRenewing: endDate.isEmpty()
+  status: if (formula.isRenewing, "renews", "ends")+" "+formula["next-payment-duration"]
+  next-payment-days: number((date(formula["next-payment-date"])-now()).days.toFixed(0))
+  cycleDays: (date("1970-01-01")-cycle-date("1970-01-01")).days.abs()
+  pricePerMonth: |
+    (price/formula.cycleDays*31).toFixed(2)
+properties:
+  formula.enabled:
+    displayName: active
+  formula.price-adjusted:
+    displayName: price-adjusted
+  formula.next-payment-date:
+    displayName: next-payment-date
+  formula.started:
+    displayName: started
+  formula.cycleDays:
+    displayName: cycleDays
+views:
+  - type: table
+    name: Subscriptions
+    groupBy:
+      property: formula.enabled
+      direction: DESC
+    order:
+      - formula.icon
+      - file.name
+      - formula.status
+      - formula.next-payment-date
+      - cycle
+      - price
+      - formula.pricePerMonth
+      - currency
+      - formula.started
+      - endDate
+      - formula.duration
+      - account
+      - account-holder
+      - category
+      - tags
+      - shared
+      - share-price
+      - formula.price-adjusted
+      - notes
+    sort:
+      - property: formula.status
+        direction: DESC
+      - property: formula.next-payment-date
+        direction: ASC
+      - property: formula.pricePerMonth
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      formula.icon: 71
+      file.name: 122
+      formula.status: 128
+      formula.next-payment-date: 194
+      note.cycle: 82
+      note.price: 80
+      formula.pricePerMonth: 155
+      note.currency: 107
+      formula.started: 96
+      note.endDate: 126
+      formula.duration: 105
+      note.account: 172
+      note.account-holder: 152
+      note.category: 112
+      note.tags: 72
+      note.shared: 83
+      note.share-price: 133
+      formula.price-adjusted: 159
+      note.notes: 204
+  - type: table
+    name: Subscriptions Active
+    filters:
+      and:
+        - formula.enabled == true
+    order:
+      - formula.icon
+      - file.name
+      - formula.status
+      - formula.next-payment-date
+      - cycle
+      - price
+      - formula.pricePerMonth
+      - currency
+      - formula.started
+      - endDate
+      - formula.duration
+      - account
+      - account-holder
+      - category
+      - tags
+      - shared
+      - share-price
+      - formula.price-adjusted
+      - notes
+    sort:
+      - property: formula.next-payment-date
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      formula.icon: 38
+      formula.status: 128
+      formula.next-payment-date: 116
+      note.cycle: 47
+      formula.pricePerMonth: 58
+      note.currency: 55
+      note.endDate: 126
+      formula.duration_precise: 254
+      note.account: 172
+      note.account-holder: 53
+      note.category: 112
+      formula.price-adjusted: 80
+      note.notes: 204
+  - type: table
+    name: Subscriptions Inactive
+    filters:
+      and:
+        - formula.enabled == false
+    order:
+      - formula.icon
+      - file.name
+      - endDate
+      - cycle
+      - price
+      - formula.pricePerMonth
+      - currency
+      - formula.started
+      - formula.duration
+      - account
+      - account-holder
+      - category
+      - tags
+      - shared
+      - share-price
+      - formula.price-adjusted
+      - notes
+    sort:
+      - property: endDate
+        direction: DESC
+      - property: formula.started
+        direction: ASC
+    columnSize:
+      formula.icon: 38
+      formula.status: 128
+      formula.next-payment-date: 116
+      note.cycle: 47
+      formula.pricePerMonth: 58
+      note.currency: 55
+      note.endDate: 126
+      formula.duration_precise: 254
+      note.account: 172
+      note.account-holder: 53
+      note.category: 112
+      formula.price-adjusted: 80
+      note.notes: 204
+  - type: calendar
+    name: Renewals
+    filters:
+      and:
+        - formula.enabled == true
+        - formula.isRenewing == true
+    startDate: formula.next-payment-date
+  - type: calendar
+    name: Ending
+    filters:
+      and:
+        - formula.isRenewing == false
+        - formula.enabled == true
+    startDate: formula.next-payment-date
+  - type: table
+    name: Subscriptions Soon
+    filters:
+      and:
+        - formula.enabled == true
+    order:
+      - formula.icon
+      - file.name
+      - formula.status
+      - formula.next-payment-date
+      - notes
+    sort:
+      - property: formula.next-payment-date
+        direction: ASC
+    limit: 3
+    columnSize:
+      formula.icon: 38
+      formula.status: 128
+      formula.next-payment-date: 116
+      note.currency: 55
+      note.cycle: 66
+      note.endDate: 126
+      note.account: 172
+      note.account-holder: 53
+      note.category: 112
+      formula.price-adjusted: 80
+      note.notes: 204
+  - type: list
+    name: Subscriptions Soon List
+    filters:
+      and:
+        - formula.enabled == true
+    order:
+      - formula.icon
+      - file.name
+      - formula.status
+      - notes
+      - formula.next-payment-date
+    sort:
+      - property: formula.next-payment-date
+        direction: ASC
+    limit: 3
+    columnSize:
+      formula.icon: 38
+      formula.status: 128
+      formula.next-payment-date: 116
+      note.currency: 55
+      note.cycle: 66
+      note.endDate: 126
+      note.account: 172
+      note.account-holder: 53
+      note.category: 112
+      formula.price-adjusted: 80
+      note.notes: 204
+    separator: " "
+    markers: number
+    nestedProperties: false
+  - type: tasknotesCalendar
+    name: Ending Calendar View
+    calendarView: dayGridMonth
+    showICS_ics_bb91vhfdemf12oemw: false
+    showICS_ics_q3765di1smf12p46b: false
+    showICS_ics_0k7qvgafnmghaso1i: false
+    titleProperty: note.endDate
+    startDateProperty: note.endDate

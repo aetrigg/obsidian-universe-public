@@ -1,0 +1,41 @@
+views:
+  - type: cards
+    name: Coloring Books
+    filters:
+      and:
+        - file.folder == "SYSTEM/_data/Books/Coloring Books"
+    order:
+      - file.name
+      - author
+      - purchased
+      - scanned
+      - status
+      - last_colored
+    image: note.cover
+  - type: cards
+    name: Books to Scan
+    filters:
+      and:
+        - file.folder == "SYSTEM/_data/Books/Coloring Books"
+        - scanned == false
+    order:
+      - file.name
+      - author
+      - format
+      - purchased
+    image: note.cover
+  - type: table
+    name: Scan List
+    filters:
+      and:
+        - file.folder == "SYSTEM/_data/Books/Coloring Books"
+        - scanned == false
+    order:
+      - file.name
+      - author
+      - purchased
+      - scanned
+      - status
+    sort:
+      - property: purchased
+        direction: ASC

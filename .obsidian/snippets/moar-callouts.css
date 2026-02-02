@@ -1,0 +1,9 @@
+.callout[data-callout="add"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: lucide-file-plus;
+}
+
+.callout[data-callout="modify"]{
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: lucide-file-clock;
+}

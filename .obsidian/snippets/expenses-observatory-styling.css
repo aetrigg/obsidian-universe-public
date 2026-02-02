@@ -1,0 +1,276 @@
+/* Glyph Observatory Dropdowns */
+
+.glyph-dropdown {
+    position: relative;
+  }
+
+.glyph-dropdown-header {
+    background: transparent !important;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    border: 2px solid #8A6CF5 !important;
+    border-radius: 30px;
+    font-size:15px;
+    font-weight:500;
+}
+
+.glyph-dropdown-header:hover {
+    cursor:pointer;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.glyph-dropdown:hover .glyph-dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.glyph-dropdown-option {
+    color: #FFFFFF;
+    padding:10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.glyph-dropdown-options {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%; 
+    background: rgba(2,2,2,0.9) !important;
+    padding: 0px !important;
+    border-radius: 15px;
+    z-index: 10000;
+    min-width: 120px;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.glyph-dropdown-panel {
+    background: rgba(2,2,2,0.2) !important;
+    border-radius: 20px;
+    margin-top:0px !important;
+}
+
+.glyph-dropdown-option:hover {
+    background: rgba(124, 77, 255, 0.25);
+    text-shadow:
+    0 0 8px #8A6CF5,
+    0 0 14px #BA9FFF,
+    0 0 24px #C3B1FF;
+}
+
+.glyph-dropdown-options::webkit-scrollbar {
+    display: none !important;
+}
+
+/* Glyph Search Input */
+.glyph-search {
+    background: rgba(20,20,20,0.3) !important;
+    backdrop-filter: blur(2.5px) !important;
+    color: #FFFFFF !important;
+    padding: 10px 20px !important;
+    border: 2px solid #8A6CF5 !important;
+    border-radius: 30px !important;
+    font-size: var(--font-text-size) !important;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+    outline: none !important;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease !important;
+    min-width: 300px;
+}
+
+.glyph-search:focus {
+    border-color: #8A6CF5 !important;
+    outline: none !important;
+}
+
+.glyph-search::placeholder {
+    color: var(--text-muted);
+}
+
+/* Expense Tags */
+.expense-tag {
+    background: var(--tag-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--tag-text);
+    cursor: pointer;
+}
+
+/* Pagination */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    padding: 8px 20px !important;
+    border-radius: 30px !important;
+    font-size: 14px !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer;
+    border: 2px solid #8A6CF5 !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+}
+
+.pagination-btn:not(.pagination-disabled):hover {
+    background-color: #8A6CF5 !important;
+    color: #ffffff !important;
+    filter:
+    drop-shadow(0 0 4px #8A6CF5)
+    drop-shadow(0 0 6px #BA9FFF);
+}
+
+.pagination-disabled {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+    opacity: 0.5 !important;
+}
+
+.pagination-info {
+    padding: 6px 15px;
+    background: transparent;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* Clear Filters */
+.clear-filters-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.clear-filters-btn {
+    padding: 8px 20px !important;
+    border-radius: 30px !important;
+    font-size: 14px !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer;
+    border: 2px solid #8A6CF5 !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+}
+
+.clear-filters-btn:hover {
+    background-color: #8A6CF5 !important;
+    color: #ffffff !important;
+    filter:
+    drop-shadow(0 0 4px #8A6CF5)
+    drop-shadow(0 0 6px #BA9FFF);
+}
+
+
+/* MISSION CONTROL 2.0 CODE */
+.homepage-launchpad{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.launchpad-card{
+    width:32%;
+    display:flex;
+    flex-direction:column;
+    box-sizing:border-box;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-right:10px;
+}
+
+.launchpad-card a{
+    padding:5px 10px;
+    background-color:transparent;
+    border:solid 2px #8A6CF5;
+    width: 100%;
+    margin-top:5px;
+    margin-bottom:5px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.launchpad-card a:hover{
+    filter:
+    drop-shadow(0 0 4px #8A6CF5)
+    drop-shadow(0 0 6px #BA9FFF); 
+}
+
+/* Scoped White Theme for Expenses Observatory */
+.expenses-observatory .glyph-dropdown-header {
+    border-color: #ffffff !important;
+    box-shadow: none !important;
+    background: rgba(20,20,20,0.2) !important;
+    backdrop-filter: blur(2.5px) !important;
+}
+
+.expenses-observatory .clear-filters-btn {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    background: rgba(50,50,50,0.4) !important;
+    backdrop-filter: blur(2.5px) !important;
+}
+
+.expenses-observatory .clear-filters-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    filter: drop-shadow(0 0 4px #ffffff) drop-shadow(0 0 6px #ffffff);
+}
+
+.expenses-observatory .pagination-btn:not(.pagination-disabled) {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    background: rgba(50,50,50,0.4) !important;
+    backdrop-filter: blur(2.5px) !important;
+}
+
+.expenses-observatory .pagination-btn:not(.pagination-disabled):hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    filter: drop-shadow(0 0 4px #ffffff) drop-shadow(0 0 6px #ffffff);
+}
+
+.expenses-observatory .glyph-search {
+    border-color: #ffffff !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.expenses-observatory .glyph-search:hover,
+.expenses-observatory .glyph-search:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.4), 0 0 32px rgba(255, 255, 255, 0.2) !important;
+}
+
+.expenses-observatory .launchpad-card a {
+    border-color: #ffffff !important;
+}
+
+.expenses-observatory .launchpad-card a:hover {
+    filter: drop-shadow(0 0 4px #ffffff) drop-shadow(0 0 6px #ffffff);
+}

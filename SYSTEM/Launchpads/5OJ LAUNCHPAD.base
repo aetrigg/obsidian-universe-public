@@ -1,0 +1,12 @@
+views:
+  - type: cards
+    name: 5OJ LAUNCHPAD
+    filters:
+      and:
+        - file.folder.startsWith("5OJ")
+        - type == "moc"
+        - and:
+            - '!file.inFolder("5TH OF JUNE/Note Imports")'
+        - not:
+            - file.hasLink("SYSTEM/vault-structure.txt")
+    image: note.image
