@@ -24,44 +24,20 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "README.md",
-      "timestamp": 1770002559250
-    },
-    {
-      "filepath": "OBSERVATORIES/Finances/Expenses Observatory.md",
-      "timestamp": 1770001959956
-    },
-    {
-      "filepath": "MISSION CONTROL.md",
-      "timestamp": 1770001908140
-    },
-    {
-      "filepath": "OBSERVATORIES/Frequency Scanner.md",
-      "timestamp": 1770001852177
-    },
-    {
-      "filepath": "Digital Hobonichi/2026/01-January/2026-01-31.md",
-      "timestamp": 1770001758646
-    },
-    {
-      "filepath": "OBSERVATORIES/Finances/Wealth Flux Report.md",
-      "timestamp": 1770001612480
+      "filepath": "Digital Hobonichi/2026/01-January/2026-01-23.md",
+      "timestamp": 1770244845913
     },
     {
       "filepath": "Digital Hobonichi/2026/Monthly Overview/January 2026.md",
-      "timestamp": 1770001371598
+      "timestamp": 1770244521377
     },
     {
-      "filepath": "OBSERVATORIES/Finances/Expenses Log.md",
-      "timestamp": 1769999771325
+      "filepath": "MISSION CONTROL.md",
+      "timestamp": 1770244502115
     },
     {
-      "filepath": "OBSERVATORIES/Finances/Bills & Subscriptions Overview.md",
-      "timestamp": 1769999678317
-    },
-    {
-      "filepath": "Digital Hobonichi/2025/12-December/2025-12-11.md",
-      "timestamp": 1769999309484
+      "filepath": "README.md",
+      "timestamp": 1770244495638
     }
   ],
   "bookmarkedFileStore": [
@@ -73,9 +49,6 @@
     },
     {
       "filepath": "NORTH STAR.md"
-    },
-    {
-      "filepath": "THE BLACK HOLE/Completed Tasks.md"
     }
   ],
   "searchDelay": 0,
