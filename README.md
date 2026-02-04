@@ -1,6 +1,6 @@
 # 🌌 Welcome to My Universe
 
-![[SYSTEM/_media/images/screenshots/homepage.gif]]
+![homepage gif](SYSTEM/_media/images/screenshots/homepage.gif)
 
 This vault is my sky — a living map of thoughts, memories, stories, and sparks of curiosity drifting through the dark. Every note is a star, every tag a constellation, every project a galaxy still expanding. Some ideas burn bright at the center of everything, others float softly at the edge, waiting to be discovered.
 
@@ -14,44 +14,45 @@ Read on to learn how to explore my personal cosmos.
 
 ---
 > ## ⋆｡°✩ Table of Contents ✩°｡⋆
-> [About This Vault](#about-this-vault)
-> 1. [The Hitchhiker's Guide to My Universe](#the-hitchhikers-guide-to-my-universe)
->	1. [Universal Glossary](#universal-glossary)
->	2. [Coloring the Cosmos](#coloring-the-cosmos-lmao)
->		1. [Universal Color Philosophy](#universal-color-philosophy)
->		2. [Constellations](#constellations)
->		3. [Star Charts](#star-charts)
->	3. [Navigating the Nebulae](#navigating-the-nebulae)
->		1. [The Celestial Architecture](#the-celestial-architecture)
->		2. [The Digital Hobonichi Galaxy](#the-digital-hobonichi-galaxy)
->		3. [The INBOX Nebula](#the-inbox-nebula)
->		4. [The 5th of June Galaxy](#the-5th-of-june-galaxy)
->		5. [The Coloring the Cosmos Galaxy](#the-coloring-the-cosmos-galaxy)
->		6. [The OBSERVATORIES Nebula](#the-observatories-nebula)
->		7. [The SYSTEM Nebula](#the-system-nebula)
->	4. [Plugins Used](#plugins-used)
->		1. [Core Plugins](#core-plugins)
->		2. [Visualization & Interface Plugins](#visualization--interface-plugins)
->		3. [Data & Query Plugins](#data--query-plugins)
->		4. [Automation Plugins](#automation-plugins)
->		5. [Integration Plugins](#integration-plugins)
->		6. [Organization & Navigation Plugins](#organization--navigation-plugins)
->		7. [Productivity & Tracking Plugins](#productivity--tracking-plugins)
->		8. [Utility Plugins](#utility-plugins)
->		9. [Development & Writing Plugins](#development--writing-plugins)
->		10. [Setup Instructions](#setup-instructions)
-> 2. [A Gentle Warning from the Stars](#a-gentle-warning-from-the-stars)
-> 3. [Gratitude Across the Cosmos](#gratitude-across-the-cosmos)
-> 4. [Open Transmissions Welcome](#open-transmissions-welcome)
+> 01. [Visuals](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-visuals-)
+> 02. [About This Vault](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-about-this-vault-)
+> 03. [The Hitchhiker's Guide to My Universe](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-hitchhikers-guide-to-my-universe-)
+>	04. [Universal Glossary](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-part-1-universal-glossary-)
+>	05. [Coloring the Cosmos](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-part-2-coloring-the-cosmos-lmao-)
+>		01. [Universal Color Philosophy](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-universal-color-philosophy-)
+>		02. [Constellations](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-constellations-)
+>		03. [Star Charts](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-star-charts-)
+>	06. [Navigating the Nebulae](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-part-3-navigating-the-nebulae-)
+>		01. [The Celestial Architecture](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-celestial-architecture-)
+>		02. [The Digital Hobonichi Galaxy](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-digital-hobonichi-galaxy-)
+>		03. [The INBOX Nebula](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-inbox-nebula-)
+>		04. [The 5th of June Galaxy](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-5th-of-june-galaxy-)
+>		05. [The Coloring the Cosmos Galaxy](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-coloring-the-cosmos-galaxy-)
+>		06. [The OBSERVATORIES Nebula](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-observatories-nebula-)
+>		07. [The SYSTEM Nebula](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-the-system-nebula-)
+>	07. [Plugins Used](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-part-4-plugins-used-)
+>		01. [Core Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-core-plugins-)
+>		02. [Visualization & Interface Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-visualization--interface-plugins-)
+>		03. [Data & Query Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-data--query-plugins-)
+>		04. [Automation Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-automation-plugins-)
+>		05. [Integration Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-integration-plugins-)
+>		06. [Organization & Navigation Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-organization--navigation-plugins-)
+>		07. [Productivity & Tracking Plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-productivity--tracking-plugins-)
+>		08. [Utility Plugins]([#utility-plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-utility-plugins-))
+>		09. [Development & Writing Plugins]([#development--writing-plugins](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-development--writing-plugins-))
+>		10. [Setup Instructions](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-setup-instructions-)
+> 08. [A Gentle Warning from the Stars](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-a-gentle-warning-from-the-stars-)
+> 09. [Gratitude Across the Cosmos](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-gratitude-across-the-cosmos-)
+> 10. [Open Transmissions Welcome](https://github.com/aetrigg/obsidian-universe-public/tree/master?tab=readme-ov-file#-open-transmissions-welcome-)
 
 ---
 ## ⋆｡°✩ Visuals ✩°｡⋆
-![[SYSTEM/_media/images/screenshots/new-tab-setup.png]]
-![[SYSTEM/_media/images/screenshots/redacted-weekly-overview.png]]
-![[SYSTEM/_media/images/screenshots/monthly-overview.png]]
-![[SYSTEM/_media/images/screenshots/daily-star.png]]
-![[SYSTEM/_media/images/screenshots/frequency-scanner.png]]
-![[SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png]]
+![new tab setup](SYSTEM/_media/images/screenshots/new-tab-setup.png)
+![daily star example](SYSTEM/_media/images/screenshots/daily-star.png)
+![redacted weekly overview](SYSTEM/_media/images/screenshots/redacted-weekly-overview.png)
+![monthly overview](SYSTEM/_media/images/screenshots/monthly-overview.png)
+![frequency scanner](SYSTEM/_media/images/screenshots/frequency-scanner.png)
+![monthly overview](SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png)
 
 ## ⋆｡°✩ About This Vault ✩°｡⋆
 I created a showcase of my universe over on the Obsidian Members Group Discord, which is located [here](https://discord.com/channels/686053708261228577/1443067199202787481). I also created a [Reddit post](https://www.reddit.com/r/ObsidianMD/comments/1p6x88o/sharing_the_heart_of_my_universe_bonus_beautitab/) showcasing my home page and new tab styling. Both go further into depth about why I created my main universe in the first place. After multiple requests, I've created this public version of my universe for others to peruse. I will try my best to keep it up-to-date with my main universe, as it is still under construction and is constantly evolving! Please check the bottom of this file to see when I last updated this vault.
@@ -402,4 +403,4 @@ I prefer questions and discussions in the [dedicated thread for my universe](htt
 
 I build and maintain this universe in my free time, pouring countless hours into crafting something beautiful and functional to share with the community. If this vault has inspired you or helped organize your own cosmos, consider [buying me a coffee](https://buymeacoffee.com/hppandeli) to fuel future star-building sessions!
 
-_Last Updated: February 1st, 2026_
+_Last Updated: February 2nd, 2026_
