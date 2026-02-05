@@ -1,6 +1,6 @@
 # 📊 Activity Dashboard
 
-*Generated on 2/5/2026 at 8:01:48 AM*
+*Generated on 2/5/2026 at 2:19:01 PM*
 
 > [!button] Refresh Dashboard
 > ```command
@@ -21,20 +21,20 @@ This dashboard provides visualizations and insights from your Obsidian activity 
 
 ## Key Metrics
 
-- **Total Events:** 26397
-- **Unique Files:** 1678
-- **Lines Added:** 5754840607
-- **Lines Removed:** 107151566
-- **Net Change:** 5647689041 lines
+- **Total Events:** 28064
+- **Unique Files:** 1677
+- **Lines Added:** 6143827501
+- **Lines Removed:** 106820243
+- **Net Change:** 6037007258 lines
 
 ## Event Breakdown
 
 ```mermaid
 pie
     title Event Types
-    "Created" : 20281
-    "Modified" : 5171
-    "Deleted" : 849
+    "Created" : 22016
+    "Modified" : 5105
+    "Deleted" : 847
     "Renamed" : 96
 ```
 
@@ -44,8 +44,8 @@ pie
 |--------|-------|
 | Most Active Day | Friday |
 | Most Active Hour | 17:00-18:00 |
-| Most Edited File | [[MISSION CONTROL]] (653 edits) |
-| Average Daily Events | 880 |
+| Most Edited File | [[MISSION CONTROL]] (655 edits) |
+| Average Daily Events | 935 |
 | Average Edits Per File | 3 |
 
 ---
@@ -56,14 +56,14 @@ pie
 
 | File | Edits | Lines Added | Lines Removed |
 |------|-------|-------------|---------------|
-| [[MISSION CONTROL]] | 653 | 7761210 | 4601905 |
-| [[December 2025]] | 486 | 45438423 | 21764445 |
-| [[obsiget example]] | 468 | 97471020 | 7309540 |
+| [[MISSION CONTROL]] | 655 | 7785414 | 4601905 |
+| [[December 2025]] | 488 | 45478869 | 21764445 |
+| [[obsiget example]] | 470 | 97866244 | 7309540 |
 | [[take a peek into my universe (w.i.p.)]] | 449 | 2101429 | 359552 |
 | [[HOME]] | 361 | 2668209 | 2337605 |
-| [[2025-10-15]] | 306 | 2208871 | 19496 |
+| [[2025-10-15]] | 308 | 2226615 | 19496 |
 | [[README]] | 300 | 2253033 | 267107 |
-| [[Daily New]] | 267 | 812535 | 375089 |
+| [[Daily New]] | 269 | 826187 | 375089 |
 | [[December 2025 w Activities]] | 226 | 15464400 | 3396959 |
 | [[Frequency Scanner]] | 198 | 13969340 | 3577161 |
 
@@ -75,7 +75,7 @@ type: bar
 labels: ["MISSION CONTROL", "December 2025", "obsiget example", "take a peek int", "HOME"]
 series:
   - title: Edits
-    data: [653, 486, 468, 449, 361]
+    data: [655, 488, 470, 449, 361]
 tension: 0.2
 width: 80%
 labelColors: true
@@ -95,7 +95,7 @@ type: bar
 labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 series:
   - title: Events
-    data: [5342, 338, 692, 4903, 3499, 6274, 5349]
+    data: [5342, 338, 598, 4903, 5260, 6274, 5349]
 width: 80%
 labelColors: true
 beginAtZero: true
@@ -108,7 +108,7 @@ type: bar
 labels: ["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]
 series:
   - title: Events
-    data: [97, 22, 13, 27, 1594, 970, 5098, 1171, 4247, 6323, 3307, 3528]
+    data: [97, 22, 13, 27, 1569, 970, 6790, 1171, 4247, 6323, 3307, 3528]
 width: 80%
 labelColors: true
 beginAtZero: true
@@ -133,11 +133,11 @@ series:
   - title: Mon
     data: [12, 224, 98, 4]
   - title: Tue
-    data: [50, 288, 354, 0]
+    data: [25, 219, 354, 0]
   - title: Wed
     data: [58, 1332, 3503, 10]
   - title: Thu
-    data: [64, 875, 2556, 4]
+    data: [64, 2636, 2556, 4]
   - title: Fri
     data: [1466, 3570, 1202, 36]
   - title: Sat
@@ -152,9 +152,9 @@ labelColors: true
 |-----|---------------|------------------|----------------|------------|-------|
 | Sunday | 818 | 2476 | 2032 | 16 | 5342 |
 | Monday | 12 | 224 | 98 | 4 | 338 |
-| Tuesday | 50 | 288 | 354 | 0 | 692 |
+| Tuesday | 25 | 219 | 354 | 0 | 598 |
 | Wednesday | 58 | 1332 | 3503 | 10 | 4903 |
-| Thursday | 64 | 875 | 2556 | 4 | 3499 |
+| Thursday | 64 | 2636 | 2556 | 4 | 5260 |
 | Friday | 1466 | 3570 | 1202 | 36 | 6274 |
 | Saturday | 134 | 1751 | 3413 | 51 | 5349 |
 
@@ -170,11 +170,11 @@ type: line
 labels: ["01-07", "01-10", "01-13", "01-16", "01-19", "01-22", "01-25", "01-28", "01-31", "02-03"]
 series:
   - title: Total
-    data: [3381, 330, 3875, 3529, 1856, 2664, 517, 2912, 5871, 1368]
+    data: [3381, 330, 3875, 3529, 1856, 2664, 517, 2912, 5871, 3129]
   - title: Created
-    data: [2948, 34, 3086, 3287, 1480, 1891, 18, 2581, 3696, 1248]
+    data: [2948, 34, 3086, 3287, 1480, 1891, 18, 2581, 3696, 2995]
   - title: Modified
-    data: [381, 287, 765, 239, 371, 756, 488, 311, 1374, 119]
+    data: [381, 287, 765, 239, 371, 756, 488, 311, 1374, 133]
 tension: 0.2
 width: 90%
 fill: false
@@ -187,14 +187,14 @@ beginAtZero: true
 type: pie
 labels: ["Created", "Modified", "Deleted", "Renamed"]
 series:
-  - data: [20269, 5091, 847, 96]
+  - data: [22016, 5105, 847, 96]
 width: 60%
 labelColors: true
 ```
 
 ## Trend Analysis
 
-- **Activity Trend:** Your activity has increased by 157% over the last month
+- **Activity Trend:** Your activity has increased by 202% over the last month
 - **Peak Activity:** Your most active day was 2026-02-01 with 4169 events
 - **Consistency:** You have consistent daily activity in Obsidian
 
@@ -208,7 +208,7 @@ labelColors: true
 type: pie
 labels: ["Small Edits (<10 lines)", "Medium Edits (10-49 lines)", "Large Edits (50+ lines)"]
 series:
-  - data: [8, 45, 5095]
+  - data: [8, 45, 5029]
 width: 60%
 labelColors: true
 ```
@@ -217,7 +217,7 @@ labelColors: true
 type: bar
 labels: ["Lines Added", "Lines Removed"]
 series:
-  - data: [189494648, 34291081]
+  - data: [186792106, 33960684]
 width: 50%
 labelColors: true
 beginAtZero: true
