@@ -1,6 +1,6 @@
 # 📊 Activity Dashboard
 
-*Generated on 2/5/2026 at 8:43:27 PM*
+*Generated on 2/6/2026 at 6:54:19 AM*
 
 > [!button] Refresh Dashboard
 > ```command
@@ -167,14 +167,14 @@ labelColors: true
 
 ```chart
 type: line
-labels: ["01-07", "01-10", "01-13", "01-16", "01-19", "01-22", "01-25", "01-28", "01-31", "02-03"]
+labels: ["01-08", "01-11", "01-14", "01-17", "01-20", "01-23", "01-26", "01-29", "02-01", "02-04"]
 series:
   - title: Total
-    data: [3381, 330, 3875, 3529, 1856, 2664, 517, 2912, 5871, 4011]
+    data: [2738, 399, 3771, 3629, 2449, 2149, 367, 4471, 4253, 3980]
   - title: Created
-    data: [2948, 34, 3086, 3287, 1480, 1891, 18, 2581, 3696, 3869]
+    data: [2283, 31, 3083, 3296, 1792, 1581, 21, 3646, 2617, 3868]
   - title: Modified
-    data: [381, 287, 765, 239, 371, 756, 488, 311, 1374, 141]
+    data: [418, 361, 665, 325, 649, 555, 335, 429, 1215, 111]
 tension: 0.2
 width: 90%
 fill: false
@@ -187,14 +187,14 @@ beginAtZero: true
 type: pie
 labels: ["Created", "Modified", "Deleted", "Renamed"]
 series:
-  - data: [22890, 5113, 847, 96]
+  - data: [22218, 5063, 845, 80]
 width: 60%
 labelColors: true
 ```
 
 ## Trend Analysis
 
-- **Activity Trend:** Your activity has increased by 225% over the last month
+- **Activity Trend:** Your activity has increased by 128% over the last month
 - **Peak Activity:** Your most active day was 2026-02-01 with 4169 events
 - **Consistency:** You have consistent daily activity in Obsidian
 
