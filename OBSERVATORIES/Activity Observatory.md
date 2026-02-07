@@ -1,6 +1,6 @@
 # 📊 Activity Dashboard
 
-*Generated on 2/6/2026 at 1:34:08 PM*
+*Generated on 2/7/2026 at 10:29:36 AM*
 
 > [!button] Refresh Dashboard
 > ```command
@@ -21,21 +21,21 @@ This dashboard provides visualizations and insights from your Obsidian activity 
 
 ## Key Metrics
 
-- **Total Events:** 28983
-- **Unique Files:** 1681
-- **Lines Added:** 6340017498
-- **Lines Removed:** 106825237
-- **Net Change:** 6233192261 lines
+- **Total Events:** 28279
+- **Unique Files:** 1673
+- **Lines Added:** 6131356994
+- **Lines Removed:** 106792005
+- **Net Change:** 6024564989 lines
 
 ## Event Breakdown
 
 ```mermaid
 pie
     title Event Types
-    "Created" : 22893
-    "Modified" : 5146
-    "Deleted" : 847
-    "Renamed" : 97
+    "Created" : 22223
+    "Modified" : 5130
+    "Deleted" : 845
+    "Renamed" : 81
 ```
 
 ## Activity Snapshot
@@ -45,7 +45,7 @@ pie
 | Most Active Day | Friday |
 | Most Active Hour | 17:00-18:00 |
 | Most Edited File | [[MISSION CONTROL]] (656 edits) |
-| Average Daily Events | 966 |
+| Average Daily Events | 943 |
 | Average Edits Per File | 3 |
 
 ---
@@ -95,7 +95,7 @@ type: bar
 labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 series:
   - title: Events
-    data: [5342, 338, 598, 4903, 6142, 6311, 5349]
+    data: [5342, 338, 598, 4163, 6142, 6317, 5379]
 width: 80%
 labelColors: true
 beginAtZero: true
@@ -108,7 +108,7 @@ type: bar
 labels: ["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]
 series:
   - title: Events
-    data: [97, 22, 13, 27, 1569, 970, 6827, 1171, 5127, 6323, 3309, 3528]
+    data: [97, 22, 13, 27, 1595, 974, 6832, 1140, 5125, 6311, 3286, 2857]
 width: 80%
 labelColors: true
 beginAtZero: true
@@ -118,7 +118,7 @@ beginAtZero: true
 
 You are most active on Fridays and least active on Mondays
 
-You are most active during the evening (6PM-12AM) and least active during the night (12AM-5AM)
+You are most active during the afternoon (12PM-6PM) and least active during the night (12AM-5AM)
 
 ---
 
@@ -135,13 +135,13 @@ series:
   - title: Tue
     data: [25, 219, 354, 0]
   - title: Wed
-    data: [58, 1332, 3503, 10]
+    data: [58, 1298, 2797, 10]
   - title: Thu
     data: [64, 3516, 2558, 4]
   - title: Fri
-    data: [1466, 3607, 1202, 36]
+    data: [1466, 3613, 1202, 36]
   - title: Sat
-    data: [134, 1751, 3413, 51]
+    data: [164, 1751, 3413, 51]
 width: 70%
 labelColors: true
 ```
@@ -153,10 +153,10 @@ labelColors: true
 | Sunday | 818 | 2476 | 2032 | 16 | 5342 |
 | Monday | 12 | 224 | 98 | 4 | 338 |
 | Tuesday | 25 | 219 | 354 | 0 | 598 |
-| Wednesday | 58 | 1332 | 3503 | 10 | 4903 |
+| Wednesday | 58 | 1298 | 2797 | 10 | 4163 |
 | Thursday | 64 | 3516 | 2558 | 4 | 6142 |
-| Friday | 1466 | 3607 | 1202 | 36 | 6311 |
-| Saturday | 134 | 1751 | 3413 | 51 | 5349 |
+| Friday | 1466 | 3613 | 1202 | 36 | 6317 |
+| Saturday | 164 | 1751 | 3413 | 51 | 5379 |
 
 
 ---
@@ -167,14 +167,14 @@ labelColors: true
 
 ```chart
 type: line
-labels: ["01-08", "01-11", "01-14", "01-17", "01-20", "01-23", "01-26", "01-29", "02-01", "02-04"]
+labels: ["01-09", "01-12", "01-15", "01-18", "01-21", "01-24", "01-27", "01-30", "02-02", "02-05"]
 series:
   - title: Total
-    data: [2738, 399, 3771, 3629, 2449, 2149, 367, 4471, 4253, 4017]
+    data: [2756, 1464, 5240, 1109, 3275, 1199, 456, 8531, 1412, 2725]
   - title: Created
-    data: [2283, 31, 3083, 3296, 1792, 1581, 21, 3646, 2617, 3871]
+    data: [2284, 766, 4894, 750, 2536, 835, 25, 6256, 1248, 2627]
   - title: Modified
-    data: [418, 361, 665, 325, 649, 555, 335, 429, 1215, 144]
+    data: [434, 677, 336, 353, 722, 360, 419, 1463, 159, 97]
 tension: 0.2
 width: 90%
 fill: false
@@ -187,14 +187,14 @@ beginAtZero: true
 type: pie
 labels: ["Created", "Modified", "Deleted", "Renamed"]
 series:
-  - data: [22221, 5096, 845, 81]
+  - data: [22221, 5020, 845, 81]
 width: 60%
 labelColors: true
 ```
 
 ## Trend Analysis
 
-- **Activity Trend:** Your activity has increased by 129% over the last month
+- **Activity Trend:** Your activity has increased by 23% over the last month
 - **Peak Activity:** Your most active day was 2026-02-01 with 4169 events
 - **Consistency:** You have consistent daily activity in Obsidian
 
@@ -208,7 +208,7 @@ labelColors: true
 type: pie
 labels: ["Small Edits (<10 lines)", "Medium Edits (10-49 lines)", "Large Edits (50+ lines)"]
 series:
-  - data: [8, 45, 5068]
+  - data: [8, 45, 5052]
 width: 60%
 labelColors: true
 ```
@@ -217,7 +217,7 @@ labelColors: true
 type: bar
 labels: ["Lines Added", "Lines Removed"]
 series:
-  - data: [187025316, 33965678]
+  - data: [186925734, 33962612]
 width: 50%
 labelColors: true
 beginAtZero: true
