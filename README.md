@@ -55,23 +55,18 @@ After multiple requests from the community, I created this public version for ot
 
 ### Daily Star
 <div align="center"> <a href="./SYSTEM/_media/images/screenshots/daily-star.png"> <img src="./SYSTEM/_media/images/screenshots/daily-star.png" border="solid" border-radius="6px"> </a> </div>
-![daily star example](https://claude.ai/chat/SYSTEM/_media/images/screenshots/daily-star.png)
 
 ### Weekly Overview
 <div align="center"> <a href="./SYSTEM/_media/images/screenshots/redacted-weekly-overview.png"> <img src="./SYSTEM/_media/images/screenshots/redacted-weekly-overview.png" border="solid" border-radius="6px"> </a> </div>
-![redacted weekly overview](https://claude.ai/chat/SYSTEM/_media/images/screenshots/redacted-weekly-overview.png)
 
 ### Monthly Overview
 <div align="center"> <a href="./SYSTEM/_media/images/screenshots/monthly-overview.png"> <img src="./SYSTEM/_media/images/screenshots/monthly-overview.png" border="solid" border-radius="6px"> </a> </div>
-![monthly overview](https://claude.ai/chat/SYSTEM/_media/images/screenshots/monthly-overview.png)
 
 ### Frequency Scanner
 <div align="center"> <a href="./SYSTEM/_media/images/screenshots/frequency-scanner.png"> <img src="./SYSTEM/_media/images/screenshots/frequency-scanner.png" border="solid" border-radius="6px"> </a> </div>
-![frequency scanner](https://claude.ai/chat/SYSTEM/_media/images/screenshots/frequency-scanner.png)
 
 ### Bills & Subscriptions
 <div align="center"> <a href="./SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png"> <img src="./SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png" border="solid" border-radius="6px"> </a> </div>
-![bills/subscriptions overview](https://claude.ai/chat/SYSTEM/_media/images/screenshots/bills-subscriptions-overview.png)
 
 ---
 
