@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiFileText",
+      "LiRocket",
       "LiTableOfContents",
       "LiListTodo",
-      "LiCalendarCheck",
-      "LiCalendarDays",
-      "LiAlbum"
+      "LiCalendarCheck"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
@@ -265,5 +265,7 @@
   "Digital Hobonichi/2026/Weekly Overview/2026-W04.canvas": "LiListTodo",
   "Digital Hobonichi/2026/Weekly Overview/2026-W05.canvas": "LiListTodo",
   "5OJ/Drafts & Revisions/Drafts & Revisions MOC.md": "LiTableOfContents",
-  "5OJ/5OJ Series Bible/5OJ Series Bible MOC.md": "LiTableOfContents"
+  "5OJ/5OJ Series Bible/5OJ Series Bible MOC.md": "LiTableOfContents",
+  "HITCHHIKER'S GUIDE.md": "LiRocket",
+  "README.md": "LiFileText"
 }
