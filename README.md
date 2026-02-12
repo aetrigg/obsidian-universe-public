@@ -2,7 +2,7 @@
 
 > A cosmic-themed Obsidian vault for life management, creative writing, and personal organization — originally shared on [Reddit](https://www.reddit.com/r/ObsidianMD/comments/1p6x88o/sharing_the_heart_of_my_universe_bonus_beautitab/) and the [Obsidian Members Group Discord](https://discord.com/channels/686053708261228577/1443067199202787481).
 
-<p align="center"> <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/aetrigg/56ddbf4c7735f860666c1f8c05e08801/raw/clone.json&logo=github'> <img src="https://img.shields.io/github/stars/aetrigg/obsidian-universe-public" alt="GitHub stars"> <img src="https://img.shields.io/github/commit-activity/t/aetrigg/obsidian-universe-public" alt="GitHub total commits"> <img src="https://img.shields.io/github/last-commit/aetrigg/obsidian-universe-public" alt="GitHub last commit"> </p>
+<p align="center"> <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=clones&query=count&url=https://gist.githubusercontent.com/aetrigg/56ddbf4c7735f860666c1f8c05e08801/raw/clone.json&logo=github'> <img src="https://img.shields.io/github/stars/aetrigg/obsidian-universe-public" alt="GitHub stars"> <img src="https://img.shields.io/github/commit-activity/t/aetrigg/obsidian-universe-public" alt="GitHub total commits"> <img src="https://img.shields.io/github/last-commit/aetrigg/obsidian-universe-public" alt="GitHub last commit"> </p>
 
 ---
 
