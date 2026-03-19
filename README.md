@@ -2,7 +2,7 @@
 
 > A cosmic-themed Obsidian vault for life management, creative writing, and personal organization — originally shared on [Reddit](https://www.reddit.com/r/ObsidianMD/comments/1p6x88o/sharing_the_heart_of_my_universe_bonus_beautitab/) and the [Obsidian Members Group Discord](https://discord.com/channels/686053708261228577/1443067199202787481).
 
-<p align="center"> <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/aetrigg/56ddbf4c7735f860666c1f8c05e08801/raw/clone.json&logo=github'> <img src="https://img.shields.io/github/stars/aetrigg/obsidian-universe-public" alt="GitHub stars"> <img src="https://img.shields.io/github/commit-activity/t/aetrigg/obsidian-universe-public" alt="GitHub total commits"> <img src="https://img.shields.io/github/last-commit/aetrigg/obsidian-universe-public" alt="GitHub last commit"> </p>
+<p align="center"> <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=clones&query=count&url=https://gist.githubusercontent.com/aetrigg/56ddbf4c7735f860666c1f8c05e08801/raw/clone.json&logo=github'> <img src="https://img.shields.io/github/stars/aetrigg/obsidian-universe-public" alt="GitHub stars"> <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/aetrigg/obsidian-universe-public/master"> <img src="https://img.shields.io/github/last-commit/aetrigg/obsidian-universe-public" alt="GitHub last commit"> </p>
 
 ---
 
@@ -14,16 +14,17 @@
 
 ## 🗂️ Index
 
-- [About](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-about)
-- [Features](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-features)
-- [Screenshots](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-screenshots)
-- [Getting Started](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-getting-started)
-- [Folder Structure](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-folder-structure)
-- [Cosmic Glossary](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#%EF%B8%8F-cosmic-glossary)
-- [Plugins](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-plugins)
-- [Disclaimers](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#%EF%B8%8F-disclaimers)
-- [Acknowledgments](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-acknowledgments)
-- [Contact & Support](https://claude.ai/chat/775ce202-6134-4588-bfb3-eb532a61c31d#-contact--support)
+- [About](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-about)
+- [Features](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-features)
+- [Screenshots](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-screenshots)
+- [Getting Started](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-getting-started)
+- [Folder Structure](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-folder-structure)
+- [Cosmic Glossary](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-cosmic-glossary)
+- [Plugins](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-plugins)
+- [Disclaimers](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-disclaimers)
+- [Acknowledgments](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-acknowledgements)
+- [Contributions](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file/#-contributions)
+- [Contact & Support](https://github.com/aetrigg/obsidian-universe-public?tab=readme-ov-file#-contact--support)
 
 ---
 
@@ -287,10 +288,10 @@ This is a personal vault, but I'm always open to ideas, suggestions, and feedbac
 - **Discord**: @hppandeli — I prefer questions in the [dedicated thread](https://discord.com/channels/686053708261228577/1443067199202787481) in the Obsidian Members Group Discord
 - **GitHub**: [Open an issue](https://github.com/aetrigg/obsidian-universe-public/issues)
 - **Buy Me a Coffee** to fuel future space explorations!
-<p align="center"> <a href="https://www.buymeacoffee.com/aetrigg" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="180" height="50"> </a> </p>
+<p align="center"> <a href="https://buymeacoffee.com/hppandeli" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="180" height="50"> </a> </p>
 
 > Thank you for your support and encouragement ✨
 
 ---
 
-_Last updated: February 11th, 2026_
+_Last updated: March 13th, 2026_
